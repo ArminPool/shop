@@ -1,0 +1,17 @@
+textarea{
+
+vertical-align: top;
+}
+.form-control{
+width:200px ;
+}
+#id_message{
+width:400px ;
+}
+
+@media only screen and (max-width:500px){
+
+#id_message{
+width:300px ;
+}
+}

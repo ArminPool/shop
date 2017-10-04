@@ -1,0 +1,48 @@
+#myCarousel{
+margin-right:1px;
+margin-left:1px;
+}
+.carousel-inner img{
+margin:0px;width:100%;
+}
+
+
+.product-line {
+width: 100%;
+height:20px;
+border-bottom:
+1px solid black;
+text-align: center;
+margin-top:20px;
+margin-bottom:20px
+}
+.product-line span{
+font-size: 20px; background-color: white;; padding: 0 10px;
+
+}
+.post .thumbnail{
+
+margin-top:20px;
+margin-left:20px;
+margin-right:20px;
+border:none;
+
+}
+.post .thumbnail img{
+
+width:220px;
+height:220px;
+}
+
+.post .thumbnail p{
+
+
+
+}
+.post .thumbnail a{
+text-decoration:none;
+}
+
+#prize-paragraph{
+p
+}

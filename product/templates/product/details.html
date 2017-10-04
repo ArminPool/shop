@@ -1,0 +1,144 @@
+{% extends 'product/base.html' %}
+
+{% load staticfiles %}
+{% block style %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'product/details.css' %}"/>
+
+
+{% endblock %}
+
+
+{% block title %}
+<title>{{ post.product_name}}</title>
+{% endblock %}
+{% block body%}
+<div class="details">
+    <table>
+
+        <tr>
+
+
+            <td id="information">
+                <p>نام محصول: {{ post.product_name}}</p>
+                <p>قیمت: {{ post.product_prize}}</p>
+                <p>توضیحات: {{ post.product_des}}</p>
+            </td>
+        </tr>
+        <tr>
+{% if user.is_authenticated %}
+            <td id="button">
+                <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
+                    <button class="btn btn-primary" type="submit"> افزودن به سبد خرید
+                    </button>
+                </a>
+            </td>
+            {% endif %}
+        </tr>
+        {% if not user.is_authenticated %}
+        <tr>
+            <td>
+            <p>برای نظر دادن ابتدا <a href="/user/register/" >واردشوید</a></p>
+            </td>
+        </tr>
+
+        {% endif %}
+        <tr>
+            <td>
+
+ {% if user.is_authenticated %}
+                <form method="POST">{% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit">add comment</button>
+                </form>
+                {% endif %}
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                  {% for comments in post.comments.all %}
+                    {% if comments.is_parent and comments.is_public %}
+                <blockquote>
+                <div id="comments">
+
+                    <p> {{post.comments.all.count}} کامنت </p>
+
+                    <p>{{ comments.user }}</p>
+
+
+                     <p>{{ comments.body }}</p>
+                    {% if user.is_authenticated %}
+                    <span></span>
+<button>reply</button>
+
+                        <form method="POST" style="display:none;" >{% csrf_token %}
+                        {{form.as_p}}
+                        <input type="hidden" name="parent_id" value="{{comments.pk}}">
+                        <button type="submit">send</button>
+                    </form>
+                    {% endif %}
+
+                    {% for children in comments.children %}
+                    {% with comments=comments.children %}
+                    {% endwith %}
+
+{%if children.is_public %}
+
+ <blockquote>
+     {{ children.user }}
+
+                    <p>{{ children.body }}</p>
+     {% if user.is_authenticated %}
+                       <button>show replies</button>
+                        <form method="POST" style="display:none;"  >{% csrf_token %}
+                        {{form.as_p}}
+                        <input type="hidden" name="parent_id" value="{{comments.pk}}">
+
+                            <button type="submit">send</button>
+                        </form>
+     {% endif %}
+     {% elif children.is_public and children.user == user  %}
+     <hr>
+     <p>Your comment is await for moderation</p>
+     {% endif %}
+
+     {% endfor %}
+
+                    <hr>
+</blockquote>
+                </div>
+
+</blockquote>
+                {% elif not comments.is_public and comments.user == user %}
+                <p>Your comment is await for moderation</p>
+                 {% endif %}
+                {% endfor %}
+
+            </td>
+            <td>
+
+
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+</div>
+<script>
+$(document).ready(function() {
+$("#comments span + button").click(function(event){
+    event.preventDefault();
+    $(this).nextAll('form').first().fadeToggle();
+});
+});
+</script>
+
+{% endblock%}
+

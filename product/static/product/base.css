@@ -1,0 +1,171 @@
+
+/*
+-------------------
+        body
+-------------------
+*/
+body{
+    background-image : url("./background.png") ;
+    min-width:400px;
+    font-family: IRANSans;
+   /* background-repeat: no-repeat;
+*/
+
+
+}
+ul {
+list-style-type: none;
+}
+
+/*
+-------------------
+        jumbotron
+-------------------
+*/
+.jumbotron{
+	margin:20px;
+	margin-top:50px;
+	background-color: white;
+
+
+}
+
+.container .jumbotron {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius:0px;
+    padding-bottom:0px;
+}
+.navbar{
+
+margin-bottom:5px;
+margin-right:1px;
+margin-left:1px;
+border-radius:0px;
+
+}
+.pagination-panel{
+border:none;
+margin-right:10px;
+margin-left:10px;
+}
+
+.pagination-panel .panel-default{
+border:none;
+}
+
+.dropdown-menu {
+
+
+text-align:right;
+
+}
+#left-side .dropdown-menu {
+text-align:left;
+}
+
+.search-panel{
+
+}
+
+.search-panel .panel{
+
+
+background: url("./banner.jpg");
+border-radius:0px;
+
+}
+
+.search-panel table{
+    margin:10px auto;
+}
+
+.search-panel input{
+
+    width:220px;
+    text-align:right;
+    height:40px;
+    border: 2px solid #222222 ;
+    position:relative;left:15px;
+}
+.search-panel button{
+    border: 2px solid #222222;
+    height:40px;
+    width:44px;
+    color:white;
+    background-color:#222222;
+    position:relative;
+    left:20px;
+}
+.search-panel .btn span{
+
+color:white;
+}
+
+.footer a{
+
+color:black;
+}
+.panel-footer{
+background-color:#222222;
+color:white;
+height:auto;
+border-top:2px solid white;
+
+}
+#footer-right-side{
+float:right;
+}
+#footer-right-side hr{
+color:white;
+margin:5px;
+}
+#footer-right-side ul{
+padding-right:15px;
+
+}
+
+
+#footer-right-side a,p{
+color:white;
+text-decoration:none;
+position:relative;
+right:5px;
+padding-top:8px;
+
+}
+#footer-media{
+text-align:right;
+color:white;
+float:left;
+}
+#footer-media img{
+height:35px;
+width:35px;
+float:left;
+}
+#footer-copy-right{
+
+color:white;
+padding-right:20px;
+}
+
+
+@media only screen and (max-width:516px){
+
+.search-panel form{
+margin-right:20px;
+margin-left:20px;
+}
+}
+@media only screen and (max-width:535px){
+#footer-right-side ul{
+
+font-size:13px;
+}
+}
+
+
+
+

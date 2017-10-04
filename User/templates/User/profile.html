@@ -1,0 +1,49 @@
+{% extends 'product/base.html' %}
+
+{% load staticfiles %}
+
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'User/profile.css' %}"/>{% endblock %}
+
+<!-- The block below overwrites block in base -->
+{% block title %}
+    <title>profile</title>
+    {% endblock %}
+
+{% block profile  %}
+
+{% endblock %}
+
+{% block body %}
+
+
+<h3>پروفایل</h3>
+<br>
+{% if user.userprofile.pro_img %}
+<img src="{{ user.userprofile.pro_img.url }}">
+
+{% else  %}
+<img src="http://127.0.0.1:8000/media/uploaded/default_img_prof.jpg">
+{% endif %}
+<p>نام کاربری: {{ user }}</p>
+<p>نام: {{ user.first_name }}</p>
+<p>نام خانوادگی: {{ user.last_name }}</p>
+<p>ایمیل: {{ user.email }}</p>
+<p>شهر: {{ user.userprofile.city }}</p>
+<p>شماره تلفن: {{ user.userprofile.phone_number }}</p>
+<p>سایت: {{ user.userprofile.website }}</p>
+
+سبد خرید:
+
+{% for item in items %}
+
+<p>{{ item.product_name }}</p>
+<a href="{% url 'product:change_item' operation='remove' pk=item.pk %}">
+    <button class="btn btn-danger" type="submit"> حذف از سبد خرید</button>
+</a>
+ {% empty %}
+<p>سبد شما خالی است</p>
+
+{% endfor %}
+{% endblock %}

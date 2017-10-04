@@ -1,0 +1,14 @@
+{% get_comment_form for entry as form %}
+<!-- A context variable called form is created with the necessary hidden
+fields, timestamps and security hashes -->
+
+ <form action="{% url 'product:home' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+
+
+
+        <input type="submit" name="submit" value="Post">
+        <input type="submit" name="preview" value="Preview">
+
+  </form>

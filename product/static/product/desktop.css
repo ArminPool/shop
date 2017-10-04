@@ -1,0 +1,56 @@
+
+
+
+
+
+/*
+-------------------
+        body
+-------------------
+*/
+body{
+    background-image : url("http://gameranx.com/wp-content/uploads/2017/03/Destiny-2-1080P-Wallpaper-1.jpg");
+    min-width:400px;
+    font-family: IRANSans;
+    list-style-type: none;
+
+
+}
+
+/*
+-------------------
+        jumbotron
+-------------------
+*/
+.jumbotron{
+	margin:40px;
+	background-color: white;
+}
+
+/*
+-------------------
+        Search
+-------------------
+*/
+
+.search-panel form{
+
+position:relative;
+right:40px;
+
+}
+
+.search-panel input{
+
+border: 2px solid #E37267;
+width:200px;
+}
+
+.search-panel .btn {
+
+border: 2px solid #E37267;
+
+}
+
+
+// -------- footer ----- //
