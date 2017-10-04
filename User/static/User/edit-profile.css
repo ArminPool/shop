@@ -1,0 +1,17 @@
+.edit-text-block td{
+
+padding-bottom:20px;
+}
+
+@media only screen and (max-width:577px){
+.edit-text-block input{
+
+width:100px;
+}
+.edit-text-block td{
+
+padding-bottom:20px;
+}
+
+}
+

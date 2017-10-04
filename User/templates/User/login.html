@@ -1,0 +1,25 @@
+{% extends 'product/base.html' %}
+
+{% block body %}
+<div class="container">
+    <h2>Welcome</h2>
+    <p>
+        You can log in here!
+    </p>
+    <h3>Login</h3>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+                <label for="id_username">نام کاربری</label>
+                <input id="id_username" name="username" autofocus="" required="" type="text">
+            </p>
+        <p>
+                <label for="id_password">رمز عبور</label>
+                <input id="id_password" name="password" autofocus="" required="" type="password">
+            </p>
+        <button type="submit">ورود</button>
+    </form>
+&nbsp;
+    <p> اگر تا الان ثبت نام نکرده اید بر روی  <a href="/user/register">ثبت نام &nbsp;</a>کلیک کنید
+</div>
+{% endblock %}

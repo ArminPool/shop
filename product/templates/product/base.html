@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <!-- Use boostrap and css file stored in product/base.css -->
+
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'product/base.css' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block style %}
+    <!--  another pages which inherited from base.html can add their own style file to page !!!  -->
+    {% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    {% block title %}
+    <title>base</title>
+    {% endblock %}
+</head>
+
+<body>
+
+<!-- In base.html we focus on nav-bar ,background, container  -->
+
+<div class="container">
+
+    <div class="jumbotron">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'product:home' %}">GameShop</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="left-side">
+                        <li><a href="/contact/">تماس با ما </a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">دسته بندی <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url 'product:category' product_category='steam' %} ">Steam</a>
+
+                                </li>
+
+                                <li>
+                                    <a href="{% url 'product:category' product_category='orgins' %} ">Orgin</a>
+
+                                </li>
+                                <li>
+                                    <a href="{% url 'product:category' product_category='battle.net' %} ">Battle.net </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                {% if user.userprofile.pro_img %}
+                                <img style=" width:30px;height:30px;" src="{{ user.userprofile.pro_img.url}}">
+
+                                {% else %}
+                                <img style="width:30px;height:30px;"
+                                     src="http://127.0.0.1:8000/media/uploaded/default_img_prof.jpg">
+                                {% endif %}
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                {% if user.is_authenticated %}
+                                <li style=""><a href="/user/profile"><span
+                                        class="glyphicon glyphicon-user"
+                                        aria-hidden="true"></span>حساب کاربری</a></li>
+                                <li><a href="/user/logout"><span
+                                        class="glyphicon glyphicon-log-out"
+                                        aria-hidden="true"></span> خروج</a></li>
+
+                                <li class="dropdown-header">ویرایش حساب</li>
+                                <li><a href="/user/profile/edit">ویرایش پروفایل</a></li>
+                                <li><a href="/user/change-password">عوض کردن پسورد</a></li>
+                                <li><a href="/user/reset-password">عوض کردن پسورد
+                                    باایمیل</a></li>
+                                {% else %}
+                                <li><a href="/user/login"><span
+                                        class="glyphicon glyphicon-log-in"
+                                        aria-hidden="true"></span> ورود</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="search-panel">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <form method="get" action="/search/">
+                        <table>
+
+                            <tr>
+
+                                <td>
+
+                                    <input name="q" type="search" placeholder="جستجو در سایت">
+
+
+                                </td>
+                                <td>
+                                    <button type="submit" class="btn btn-xs">
+                                        <span>جستجو</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        {% block body %}
+        {% endblock %}
+
+
+        <div class="pagination-panel">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    {% block pagination %}
+                    {% endblock %}
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="panel-footer navbar-inverse "
+     style="">
+    <div class="post">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4" id="footer-right-side" style="">
+
+                <ul>
+                     <li>
+
+                        <a href="http://www.metacritic.com/game.com" >مشاهده نمرات بازی ها </a>
+                        <hr>
+                    </li>
+
+
+
+                    <li>
+                        <a style=""> تبلیغات </a>
+                        <hr>
+
+                    </li>
+
+                    <li>
+
+                        <a style=""> درباره ما  </a>
+                        <hr>
+                    </li>
+
+                    <li>
+
+                        <a>ایمیل:</a>
+
+                        <a style="font-size:10px;">armin_yahya@yahoo.com</a>
+<hr>
+                    </li>
+
+                </ul>
+            </div>
+
+
+                    <div class="col-xs-4 col-sm-4 col-md-4" style="" id="footer-media">
+<p style="">ما را در شبکه های اجتماعی دنبال کنید</p>
+                    <img src="{% static 'product/telegram.png' %}" style="">
+                        <img src="{% static 'product/google.png' %}" style="">
+                        <img src="{% static 'product/instagram.png' %}" style="">
+
+
+</div>
+
+
+        <div class="col-xs-4 col-sm-4 col-md-4"  id="footer-copy-right">
+            <p>© هرگونه کپی‌برداری از محتواهای این سایت ممنون است.</p>
+            <p> backendوfrontend این سایت توسط آرمین یحیی ساخته شده است. </p>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+
+</html>

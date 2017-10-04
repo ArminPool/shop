@@ -1,0 +1,86 @@
+{% extends 'product/base.html' %}
+
+
+{% block body %}
+<div class="container">
+    {% if not user.is_authenticate %}
+
+    <h2>ثبت نام</h2>
+    {% if form1.errors or form2.errors %}
+    <div class="alert alert-danger">
+        {% if form1.username.errors %}
+        <p>{{ form1.username.errors }} </p>
+        {% endif %}
+        {% if form1.email.errors %}
+        <p>{{ form1.email.errors }} </p>
+        {% endif %}
+        {% if form1.password1.errors %}
+        <p>{{ form1.password1.errors }} </p>
+        {% endif %}
+
+        {% if form2.phone_number.errors %}
+        <p>{{ form2.phone_number.errors }} </p>
+        {% endif %}
+        {% endif %}
+
+
+    </div>
+<div class="registration">
+    <form method="post" novalidate>
+        {% csrf_token %}
+
+
+        <table>
+            <tr style="display:inline">
+                <td>
+
+                    <p style="position:relative;right:2px;">نام حساب کاربری : {{ form1.username }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="position:relative">نام : {{ form1.first_name }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <p style="position:relative">نام خانوادگی : {{ form1.last_name }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <p style="position:relative;"> ایمیل: {{form1.email}}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <p style="position:relative">شماره تلفن : {{ form2.phone_number }}</p>
+                </td>
+            <tr>
+                <td>
+                    <br>
+                    <p style="position:relative">رمز عبود : {{ form1.password1 }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <br>
+                    <p style="position:relative">تکرار رمز عبور : {{ form1.password2 }}</p>
+
+                </td>
+            </tr>
+
+        </table>
+
+        <button type="submit">تایید</button>
+    </form>
+{% else %}
+    <p>  شما قبلا ثبت نام شده اید .برای مشاهده حساب کاربری خود  بر روی لینک زیر کلیک کنید</p>
+    <a href="{% url 'user:view_profile' %}">حساب کاربری</a>
+{% endif %}
+    {% endblock %}
+</div>
