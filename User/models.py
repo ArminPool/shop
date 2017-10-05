@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
 from django.contrib.auth.models import User
@@ -44,8 +45,7 @@ class UsersMessage(models.Model):
     ask_game = 'ag'
     others = 'o'
 
-    options = (
-        (cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید'), (ask_game, 'درخواست بازی'), (others, 'موارد دیگر'))
+    options = ((cooperate, 'همکاری'), (problem_buying, 'مشکل در خرید'), (ask_game, 'درخواست بازی'), (others, 'موارد دیگر'))
     issue_options = models.CharField(choices=options, default=cooperate, max_length=2)
     message = models.TextField(max_length=250, null=True)
 
