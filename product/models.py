@@ -8,7 +8,7 @@ class Post(models.Model):
 
     product_prize = models.CharField(max_length=250)
 
-    product_img = models.CharField(max_length=500)
+    product_img = models.FileField(null=True, blank=True, upload_to='uploaded')
 
     product_des = models.TextField(max_length=2000)
 
