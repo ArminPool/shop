@@ -164,4 +164,3 @@ EMAIL_PORT = 1025
 SITE_ID = 1
 MEDIA_ROOT = os.path.join(BASE_DIR,'shop/media')
 MEDIA_URL = '/media/'
-DEFAULT_IMG = '/armin/shop images/default_img_prof.jpg'
