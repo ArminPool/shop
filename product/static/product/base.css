@@ -127,7 +127,16 @@ padding-right:15px;
 }
 
 
-#footer-right-side a,p{
+#footer-right-side a{
+color:white;
+text-decoration:none;
+position:relative;
+right:5px;
+padding-top:8px;
+
+}
+
+#footer-right-side p{
 color:white;
 text-decoration:none;
 position:relative;
