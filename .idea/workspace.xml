@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/D2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/AS_orgin.jpg" afterPath="$PROJECT_DIR$/product/static/product/AS_orgin.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/COD_W2.jpg" afterPath="$PROJECT_DIR$/product/static/product/COD_W2.jpg" />
+    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="crousel image changed and css changed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/edit_profile.html" afterPath="$PROJECT_DIR$/User/templates/User/edit_profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/base.css" afterPath="$PROJECT_DIR$/product/static/product/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/post.css" afterPath="$PROJECT_DIR$/product/static/product/post.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/base.html" afterPath="$PROJECT_DIR$/product/templates/product/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -324,11 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,6 +336,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,14 +544,20 @@
       <option name="project" value="LOCAL" />
       <updated>1507208130489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="crousel image changed and css changed">
+      <created>1507269148203</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1507269148203</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20629922" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
@@ -620,7 +619,8 @@
     <MESSAGE value="python added" />
     <MESSAGE value="color mistake in css fixed" />
     <MESSAGE value="product-image field changed to filefield" />
-    <option name="LAST_COMMIT_MESSAGE" value="product-image field changed to filefield" />
+    <MESSAGE value="crousel image changed and css changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="crousel image changed and css changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
