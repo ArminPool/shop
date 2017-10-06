@@ -4,6 +4,7 @@
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="comment input changed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/details.html" afterPath="$PROJECT_DIR$/product/templates/product/details.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="160" column="22" lean-forward="true" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+            <state relative-caret-position="40">
+              <caret line="72" column="78" lean-forward="false" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="106" />
               <folding>
                 <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -70,9 +71,12 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="130" column="53" lean-forward="false" selection-start-line="130" selection-start-column="53" selection-end-line="130" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="-570">
+              <caret line="101" column="46" lean-forward="false" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#blockquote#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -520,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507274456982</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="comment input changed">
+      <created>1507274515998</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1507274515998</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -919,16 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="160" column="22" lean-forward="true" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -953,11 +954,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="72" column="78" lean-forward="false" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="106" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="130" column="53" lean-forward="false" selection-start-line="130" selection-start-column="53" selection-end-line="130" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="-570">
+          <caret line="101" column="46" lean-forward="false" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#blockquote#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

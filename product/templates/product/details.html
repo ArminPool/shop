@@ -71,14 +71,14 @@
                 <div id="comments">
 
                     <p> {{post.comments.all.count}} کامنت </p>
-
+                    <img src="{{ comments.user.userprofile.pro_img.url }}" style="float:left;">
                     <p>{{ comments.user }}</p>
 
 
                      <p>{{ comments.body }}</p>
                     {% if user.is_authenticated %}
                     <span></span>
-<button>reply</button>
+<button>فرستادن</button>
 
                         <form method="POST" style="display:none;" >{% csrf_token %}
                                                  <div class="form-group">
@@ -99,6 +99,8 @@
 {%if children.is_public %}
 
  <blockquote>
+                         <img src="{{ children.user.userprofile.pro_img.url }}" style="float:left;">
+
      {{ children.user }}
 
                     <p>{{ children.body }}</p>
