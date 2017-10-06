@@ -24,10 +24,10 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="item active" >
-<a href="#">
-            <img src="{% static 'product/COD_W2.jpg' %}"
-                 alt="COD" style=""></a>
+        <div class="item active">
+            <a href="#">
+                <img src="{% static 'product/COD_W2.jpg' %}"
+                     alt="COD" style=""></a>
 
 
         </div>
@@ -45,75 +45,72 @@
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="icon-prev"></span>
     </a>
-    <a class="right carousel-control" data-slide="next" href="#myCarousel" >
-<span class="icon-next"></span>
+    <a class="right carousel-control" data-slide="next" href="#myCarousel">
+        <span class="icon-next"></span>
     </a>
 </div>
 
 <!-- Posts are in rows and column for design responsive,.. !!!  -->
-    <div class="product-line" style=";">
+<div class="product-line" style=";">
       <span style=" ">
         محصولات فروشگاه
       </span>
 
-    </div>
+</div>
 
 <div class="post">
     <div class="row">
 
-{% for post in posts %}
-<div class="col-xs-12 col-sm-6 col-md-3">
+        {% for post in posts %}
+        <div class="col-xs-12 col-sm-6 col-md-3">
 
-     <div class="thumbnail">
+            <div class="thumbnail">
 
-            <img src="{{post.product_img.url}}">
-         <div class="text-center">
-         <div class="caption">
-
-
-
-            <p>{{ post.product_name}}</p>
+                <img src="{{post.product_img.url}}">
+                <div class="text-center">
+                    <div class="caption">
 
 
-            <p id="prize-paragraph"> {{ post.product_prize}} </p>
-            <br>
-
-            {% if user.is_authenticated %}
-            <a href="{% url 'product:change_item' operation='add' pk=post.pk %}" >
-                <button class="btn btn-primary" type="submit">
-افزودن به سبد خرید
-                </button>
-
-</a>
-{% endif %}
+                        <p style="display:inline-block">{{ post.product_name}}</p>
 
 
- <a href="{% url 'product:detail'  pk=post.pk %}">
-     <button class="btn btn-primary" type="submit">جزئیات
+                        <p id="prize-paragraph"> {{ post.product_prize}} </p>
+                        <br>
 
-                </button>
-            </a>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
+                            <button class="btn btn-primary" type="submit">
+                                افزودن به سبد خرید
+                            </button>
 
-         </div>
-</div>
-     </div>
+                        </a>
+                        {% endif %}
+
+
+                        <a href="{% url 'product:detail'  pk=post.pk %}">
+                            <button class="btn btn-primary" type="submit">جزئیات
+
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
 
-
-
-{% endfor %}
+        {% endfor %}
     </div>
 </div>
 
 {%  endblock%}
 
- {% block pagination %}
+{% block pagination %}
 {% if is_paginated %}
 <div class="text-center">
     <div id="pagination-bar">
-  <ul class="pagination">
+        <ul class="pagination">
             {% if page_obj.has_previous %}
             <li><a href="?page={{ page_obj.previous_page_number }}"><span>&raquo;</span></a></li>
             {% else %}
@@ -132,8 +129,8 @@
             <li class="disabled"><span>&laquo;</span></li>
             {% endif %}
         </ul>
-</div>
     </div>
-        {% endif %}
-        {% endblock %}
+</div>
+{% endif %}
+{% endblock %}
 
