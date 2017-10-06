@@ -1,5 +1,5 @@
 {% extends 'product/base.html' %}
-
+{% load tz %}
 {% load staticfiles %}
 {% block style %}
 
@@ -46,7 +46,7 @@
         {% endif %}
         <tr>
             <td>
-
+{% timezone "Asia/Iran" %}
                 {% if user.is_authenticated %}
                 <form method="POST">{% csrf_token %}
                     <div class="form-group">
@@ -71,7 +71,7 @@
                     <div id="comments">
 
                         <p> {{post.comments.all.count}} کامنت </p>
-{% if user.userprofile.pro_img %}
+{% if comments.user.userprofile.pro_img %}
                         <img style=" width:30px;height:30px;float:right;" src="{{ comment.user.userprofile.pro_img.url}}">
 
                                 {% else %}
@@ -107,7 +107,7 @@
                             {%if children.is_public %}
 
                             <blockquote>
-                                {% if user.userprofile.pro_img %}
+                                {% if children.user.userprofile.pro_img %}
                         <img style=" width:30px;height:30px;float:right;" src="{{ children.user.userprofile.pro_img.url}}">
 
                                 {% else %}
@@ -151,7 +151,7 @@
 
             </td>
             <td>
-
+{% endtimezone %}
 
             </td>
         </tr>
