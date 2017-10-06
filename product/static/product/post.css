@@ -35,15 +35,19 @@ width:220px;
 height:220px;
 }
 
-.post .thumbnail p{
 
-
-
-}
 .post .thumbnail a{
 text-decoration:none;
 }
 
 #prize-paragraph{
+
+}
+@media only screen and (min-width:992px){}
+.post .thumbnail p{
+
+
+font-size:12px;
+
 
 }
