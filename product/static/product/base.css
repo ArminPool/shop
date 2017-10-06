@@ -116,7 +116,7 @@ border-top:2px solid white;
 
 }
 #footer-right-side{
-float:right;
+
 }
 #footer-right-side hr{
 color:white;
@@ -148,7 +148,7 @@ padding-top:8px;
 #footer-media{
 text-align:right;
 color:white;
-float:left;
+
 }
 #footer-media img{
 height:35px;
@@ -169,10 +169,22 @@ margin-right:20px;
 margin-left:20px;
 }
 }
-@media only screen and (max-width:535px){
-#footer-right-side ul{
 
-font-size:13px;
+@media only screen and (max-width:750px){
+#footer-right-side{
+float:right;
+}
+#footer-media{
+text-align:right;
+color:white;
+float:left;
+}
+#footer-copy-right{
+
+color:white;
+padding-right:20px;
+float:right;
+}
 }
 }
 
