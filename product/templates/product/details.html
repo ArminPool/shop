@@ -80,6 +80,8 @@
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
                         <button type="submit">send</button>
                     </form>
+                    <button id="show-replies"></button>
+                    <div id="replies" style="display:none;">
                     {% endif %}
 
                     {% for children in comments.children %}
@@ -112,6 +114,7 @@
                     <hr>
 </blockquote>
                 </div>
+                    </div>
 
 </blockquote>
                 {% elif not comments.is_public and comments.user == user %}
@@ -138,6 +141,12 @@ $("#comments span + button").click(function(event){
     event.preventDefault();
     $(this).nextAll('form').first().fadeToggle();
 });
+
+$("#show-replies").click(function(event){
+    event.preventDefault();
+    $("#replies").fadeToggle();
+});
+
 });
 </script>
 
