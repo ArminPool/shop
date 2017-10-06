@@ -95,10 +95,14 @@
      {% if user.is_authenticated %}
                        <button>show replies</button>
                         <form method="POST" style="display:none;"  >{% csrf_token %}
-                        {{form.as_p}}
+                            <div class="form-group">
+ <label for="id_body">پیام</label>
+        <textarea class="form-control" id="id_body" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
 
                             <button type="submit">send</button>
+                            </div>
                         </form>
      {% endif %}
      {% elif children.is_public and children.user == user  %}
