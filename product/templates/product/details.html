@@ -71,14 +71,15 @@
                 <div id="comments">
 
                     <p> {{post.comments.all.count}} کامنت </p>
-                    <img src="{{ comments.user.userprofile.pro_img.url }}" style="float:left;">
+                    <img src="{{ comments.user.userprofile.pro_img.url }}" style="float:right;height:300px;
+width:300px;">
                     <p>{{ comments.user }}</p>
 
 
                      <p>{{ comments.body }}</p>
                     {% if user.is_authenticated %}
                     <span></span>
-<button>فرستادن</button>
+<button>پاسخ دادن</button>
 
                         <form method="POST" style="display:none;" >{% csrf_token %}
                                                  <div class="form-group">
