@@ -43,11 +43,12 @@ text-decoration:none;
 #prize-paragraph{
 
 }
-@media only screen and (min-width:992px){}
+@media only screen and (min-width:992px){
 .post .thumbnail p{
 
 
 font-size:18px;
 
 
+}
 }
