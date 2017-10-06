@@ -558,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507275778230</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="comment input changed">
+      <created>1507275788364</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1507275788364</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -630,9 +637,9 @@
     <MESSAGE value="crousel image changed and css changed" />
     <MESSAGE value="comment moderation language and button lang changed" />
     <MESSAGE value="image added to comments" />
-    <MESSAGE value="comment input changed" />
     <MESSAGE value="base-details-posts changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="base-details-posts changed" />
+    <MESSAGE value="comment input changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment input changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
