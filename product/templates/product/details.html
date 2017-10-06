@@ -49,8 +49,13 @@
 
  {% if user.is_authenticated %}
                 <form method="POST">{% csrf_token %}
-                    {{form.as_p}}
+                                                              <div class="form-group">
+ <label for="1-comments">پیام</label>
+        <textarea class="form-control" id="1-comments" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
+
                     <button type="submit">add comment</button>
+                                                              </div>
                 </form>
                 {% endif %}
 
@@ -76,9 +81,14 @@
 <button>reply</button>
 
                         <form method="POST" style="display:none;" >{% csrf_token %}
-                        {{form.as_p}}
+                                                 <div class="form-group">
+ <label for="2-comments">پیام</label>
+        <textarea class="form-control" id="2-comments" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
+
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
                         <button type="submit">send</button>
+                                                 </div>
                     </form>
                     {% endif %}
 
@@ -96,8 +106,8 @@
                        <button>show replies</button>
                         <form method="POST" style="display:none;"  >{% csrf_token %}
                             <div class="form-group">
- <label for="id_body">پیام</label>
-        <textarea class="form-control" id="id_body" name="body" cols="5" rows="4" maxlength="250" required="">
+ <label for="3-comments">پیام</label>
+        <textarea class="form-control" id="3-comments" name="body" cols="5" rows="4" maxlength="250" required="">
     </textarea>
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
 
