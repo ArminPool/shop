@@ -90,6 +90,11 @@ def about_us(request):
     return render(request, template_name)
 
 
+def advertising(request):
+    template_name = 'product/advertising.html'
+    return render(request, template_name)
+
+
 # Maybe our Users want to change their basket of games
 def change_items(request, operation, pk):
     new_item = Post.objects.get(pk=pk)

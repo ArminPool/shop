@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
 
-from product.views import contact,about_us
+from product.views import contact,about_us,advertising
 from shop import settings
 
 urlpatterns = [
@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^search/', include('haystack.urls')),
     url(r'^contact/$', contact, name='Contact'),
     url(r'^about-us/$', about_us, name='about-us'),
+    url(r'^advertising/$', advertising, name='advertising'),
 
 
 ]
