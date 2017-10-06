@@ -93,7 +93,8 @@
 
                     <p>{{ children.body }}</p>
      {% if user.is_authenticated %}
-                       <button>show replies</button>
+     <span></span>
+                       <button>reply</button>
                         <form method="POST" style="display:none;"  >{% csrf_token %}
                         {{form.as_p}}
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">

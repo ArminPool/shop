@@ -70,8 +70,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state relative-caret-position="261">
+              <caret line="95" column="11" lean-forward="false" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#blockquote#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
@@ -655,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507305618717</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="comments changed">
+      <created>1507305898669</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1507305898669</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1077,8 +1084,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="261">
+          <caret line="95" column="11" lean-forward="false" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#form#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#blockquote#0;n#div#0;n#blockquote#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#!!top" expanded="true" />
