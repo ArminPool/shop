@@ -54,7 +54,7 @@
         <textarea class="form-control" id="1-comments" name="body" cols="5" rows="4" maxlength="250" required="">
     </textarea>
 
-                    <button type="submit">add comment</button>
+                    <button type="submit">فرستادن</button>
                                                               </div>
                 </form>
                 {% endif %}
@@ -87,7 +87,7 @@
     </textarea>
 
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                        <button type="submit">send</button>
+                        <button type="submit">فرستادن</button>
                                                  </div>
                     </form>
                     {% endif %}
@@ -111,7 +111,7 @@
     </textarea>
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
 
-                            <button type="submit">send</button>
+                            <button type="submit">فرستادن</button>
                             </div>
                         </form>
      {% endif %}
@@ -128,7 +128,7 @@
 
 </blockquote>
                 {% elif not comments.is_public and comments.user == user %}
-                <p>Your comment is await for moderation</p>
+                <p>نظر شما فرستاده شدهو منتظر تاییداست</p>
                  {% endif %}
                 {% endfor %}
 
