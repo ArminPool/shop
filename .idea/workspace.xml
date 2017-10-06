@@ -4,7 +4,6 @@
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/base.css" afterPath="$PROJECT_DIR$/product/static/product/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/Advertising.html" afterPath="$PROJECT_DIR$/product/templates/product/Advertising.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,10 +15,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="1323">
               <caret line="208" column="110" lean-forward="false" selection-start-line="208" selection-start-column="110" selection-end-line="208" selection-end-column="110" />
               <folding>
                 <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+            <state relative-caret-position="98">
+              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,7 +40,7 @@
       <file leaf-file-name="posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="349">
               <caret line="64" column="47" lean-forward="false" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
               <folding />
             </state>
@@ -458,13 +457,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00002" summary="# -*- coding: utf-8 -*- added to Usermodel">
-      <created>1507180028842</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1507180028842</updated>
-    </task>
     <task id="LOCAL-00003" summary="python added">
       <created>1507180867524</created>
       <option name="number" value="00003" />
@@ -801,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507317847985</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="footer padding fixed">
+      <created>1507318136066</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1507318136066</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -880,7 +879,8 @@
     <MESSAGE value="test done" />
     <MESSAGE value="comments changed" />
     <MESSAGE value="footer padding fixed and footer links added" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer padding fixed and footer links added" />
+    <MESSAGE value="footer padding fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer padding fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1214,9 +1214,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="349">
           <caret line="64" column="47" lean-forward="false" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
           <folding />
         </state>
@@ -1224,19 +1232,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="1323">
           <caret line="208" column="110" lean-forward="false" selection-start-line="208" selection-start-column="110" selection-end-line="208" selection-end-column="110" />
           <folding>
             <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

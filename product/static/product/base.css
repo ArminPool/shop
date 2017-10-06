@@ -115,7 +115,7 @@ border-top:2px solid white;
 
 
 }
-.panel-footer .row{
+.panel-footer .post{
 padding-left:40px;
 padding-right:40px;
 }
@@ -162,7 +162,7 @@ float:left;
 }
 #footer-copy-right{
 float:right;
-border-bottom:1px solid white;
+
 color:white;
 
 }
@@ -186,13 +186,13 @@ color:white;
 float:none;
 }
 #footer-copy-right{
-
+border-bottom:1px solid white;
 color:white;
 padding-right:0px;
 float:none;
 }
 }
-}
+
 
 
 
