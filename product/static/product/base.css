@@ -116,7 +116,7 @@ border-top:2px solid white;
 
 }
 #footer-right-side{
-
+float:right;
 }
 #footer-right-side hr{
 color:white;
@@ -148,6 +148,7 @@ padding-top:8px;
 #footer-media{
 text-align:right;
 color:white;
+float:left;
 
 }
 #footer-media img{
@@ -172,18 +173,18 @@ margin-left:20px;
 
 @media only screen and (max-width:750px){
 #footer-right-side{
-float:right;
+float:none;
 }
 #footer-media{
 text-align:right;
 color:white;
-float:left;
+float:none;
 }
 #footer-copy-right{
 
 color:white;
 padding-right:20px;
-float:right;
+float:none;
 }
 }
 }

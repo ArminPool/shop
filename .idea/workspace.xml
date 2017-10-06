@@ -4,7 +4,6 @@
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/base.css" afterPath="$PROJECT_DIR$/product/static/product/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/post.css" afterPath="$PROJECT_DIR$/product/static/product/post.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/base.html" afterPath="$PROJECT_DIR$/product/templates/product/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +19,10 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1337">
-              <caret line="210" column="18" lean-forward="false" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+            <state relative-caret-position="947">
+              <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
               <folding>
-                <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,8 +31,8 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -771,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507316429157</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="comments changed">
+      <created>1507316873117</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1507316873117</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1191,18 +1197,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1337">
-          <caret line="210" column="18" lean-forward="false" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+        <state relative-caret-position="947">
+          <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding />
         </state>
       </provider>
