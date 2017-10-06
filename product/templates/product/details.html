@@ -46,7 +46,7 @@
         {% endif %}
         <tr>
             <td>
-{% timezone "Asia/Iran" %}
+
                 {% if user.is_authenticated %}
                 <form method="POST">{% csrf_token %}
                     <div class="form-group">
@@ -151,7 +151,6 @@
 
             </td>
             <td>
-{% endtimezone %}
 
             </td>
         </tr>
