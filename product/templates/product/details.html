@@ -27,7 +27,7 @@
             </td>
         </tr>
         <tr>
-{% if user.is_authenticated %}
+            {% if user.is_authenticated %}
             <td id="button">
                 <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
                     <button class="btn btn-primary" type="submit"> افزودن به سبد خرید
@@ -36,10 +36,10 @@
             </td>
             {% endif %}
         </tr>
-       {% if not user.is_authenticated %}
+        {% if not user.is_authenticated %}
         <tr>
             <td>
-            <p>برای نظر دادن ابتدا <a href="/user/register/" >واردشوید</a></p>
+                <p>برای نظر دادن ابتدا <a href="/user/register/">واردشوید</a></p>
             </td>
         </tr>
 
@@ -47,15 +47,14 @@
         <tr>
             <td>
 
- {% if user.is_authenticated %}
+                {% if user.is_authenticated %}
                 <form method="POST">{% csrf_token %}
-                   <div class="form-group">
+                    <div class="form-group">
 
-        <label for="comment-body">پیام</label>
-        <textarea class="form-control" id="comment-body" name="body" cols="5" rows="4" maxlength="250" required="">
+        <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
     </textarea>
-                    <button type="submit">نظردادن</button>
-                   </div>
+                        <button type="submit">نظردادن</button>
+                    </div>
                 </form>
                 {% endif %}
 
@@ -65,83 +64,74 @@
 
         <tr>
             <td>
-                  {% for comments in post.comments.all %}
-                    {% if comments.is_parent and comments.is_public %}
-                 {% with id=1 %}
-                       {% with id=id+1 %}
-                {% endwith %}
-                {% endwith %}
+                {% for comments in post.comments.all %}
+                {% if comments.is_parent and comments.is_public %}
+
                 <blockquote>
-                <div id="comments">
+                    <div id="comments">
 
-                    <p> {{post.comments.all.count}} کامنت </p>
+                        <p> {{post.comments.all.count}} کامنت </p>
 
-                    <p>{{ comments.user }}</p>
+                        <p>{{ comments.user }}</p>
 
 
-                     <p>{{ comments.body }}</p>
-                    {% if user.is_authenticated %}
-                    <span></span>
-<button>reply</button>
+                        <p>{{ comments.body }}</p>
+                        {% if user.is_authenticated %}
+                        <span></span>
+                        <button>پاسخ دادن</button>
 
-                        <form method="POST" style="display:none;" >{% csrf_token %}
-                                <div class="form-group">
-        <label for="{{ id }}">پیام</label>
-        <textarea class="form-control" id="{{ id }}" name="body" cols="5" rows="4" maxlength="250" required="">
+                        <form method="POST" style="display:none;">{% csrf_token %}
+                            <div class="form-group">
+        <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
     </textarea>
-                        <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                        <button type="submit">فرستادن</button>
-                                </div>
-                    </form>
-                    <button id="show-replies">نمایش پاسخ ها</button>
-                    <div id="replies" style="display:none;">
-                    {% endif %}
-
-                    {% for children in comments.children %}
-                        {% with comments=comments.children %}
-                    {% endwith %}
-                        {% with replies-id=1 %}
-                       {% with replies-id=replies-id+1 %}
-                        {% endwith %}
-                        {% endwith %}
-
-
-{%if children.is_public %}
-
- <blockquote>
-     {{ children.user }}
-
-                    <p>{{ children.body }}</p>
-     {% if user.is_authenticated %}
-     <span></span>
-                       <button>reply</button>
-                        <form method="POST" style="display:none;"  >{% csrf_token %}
-                        <div class="form-group">
-        <label for="{{replies-id}}">پیام</label>
-        <textarea class="form-control" id="{{replies-id}}" name="body" cols="5" rows="4" maxlength="250" required="">
-    </textarea>
-                        <input type="hidden" name="parent_id" value="{{comments.pk}}">
-
-                            <button type="submit">فرستادن</button>
-                        </div>
+                                <input type="hidden" name="parent_id" value="{{comments.pk}}">
+                                <button type="submit">فرستادن</button>
+                            </div>
                         </form>
-     {% endif %}
-     {% elif children.is_public and children.user == user  %}
-     <hr>
-     <p>Your comment is await for moderation</p>
-     {% endif %}
+                        <button id="show-replies">نمایش پاسخ ها</button>
+                        <div id="replies" style="display:none;">
+                            {% endif %}
 
-     {% endfor %}
+                            {% for children in comments.children %}
+                            {% with comments=comments.children %}
+                            {% endwith %}
 
-                    <hr>
-</blockquote>
-                </div>
+
+                            {%if children.is_public %}
+
+                            <blockquote>
+                                {{ children.user }}
+
+                                <p>{{ children.body }}</p>
+                                {% if user.is_authenticated %}
+                                <span></span>
+                                <button>reply</button>
+                                <form method="POST" style="display:none;">{% csrf_token %}
+                                    <div class="form-group">
+        <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
+                                        <input type="hidden" name="parent_id" value="{{comments.pk}}">
+
+                                        <button type="submit">فرستادن</button>
+                                    </div>
+                                </form>
+                                {% endif %}
+                                {% elif children.is_public and children.user == user %}
+                                <hr>
+                                <p>Your comment is await for moderation</p>
+                                {% endif %}
+
+                                {% endfor %}
+
+                                <hr>
+                            </blockquote>
+                        </div>
                     </div>
 
-</blockquote>
+                </blockquote>
                 {% elif not comments.is_public and comments.user == user %}
                 <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                 {% endif %}
+                {% endif %}
                 {% endfor %}
 
             </td>
@@ -152,8 +142,6 @@
         </tr>
 
     </table>
-
-
 
 
 </div>
@@ -168,8 +156,10 @@ $("#show-replies").click(function(event){
     event.preventDefault();
     $("#replies").fadeToggle();
 });
+ $("textarea").before("<label>پیام</label>");
 
 });
+
 </script>
 
 {% endblock%}
