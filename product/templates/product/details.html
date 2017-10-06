@@ -53,7 +53,7 @@
 
         <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
     </textarea>
-                        <button type="submit">نظردادن</button>
+                        <button type="submit">ارسال نظر</button>
                     </div>
                 </form>
                 {% endif %}
@@ -71,7 +71,14 @@
                     <div id="comments">
 
                         <p> {{post.comments.all.count}} کامنت </p>
+{% if user.userprofile.pro_img %}
+                        <img style=" width:30px;height:30px;float:right;" src="{{ comment.user.userprofile.pro_img.url}}">
 
+                                {% else %}
+                                <img style="width:30px;height:30px;float:right;"
+                                     src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                                {% endif %}
+                        <p>{{ comments.created }}</p>
                         <p>{{ comments.user }}</p>
 
 
@@ -100,12 +107,20 @@
                             {%if children.is_public %}
 
                             <blockquote>
+                                {% if user.userprofile.pro_img %}
+                        <img style=" width:30px;height:30px;float:right;" src="{{ children.user.userprofile.pro_img.url}}">
+
+                                {% else %}
+                                <img style="width:30px;height:30px;float:right;"
+                                     src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                                {% endif %}
                                 {{ children.user }}
 
                                 <p>{{ children.body }}</p>
+                                <p>{{ children.created }}</p>
                                 {% if user.is_authenticated %}
                                 <span></span>
-                                <button>reply</button>
+                                <button>پاسخ دادن</button>
                                 <form method="POST" style="display:none;">{% csrf_token %}
                                     <div class="form-group">
         <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
@@ -118,7 +133,7 @@
                                 {% endif %}
                                 {% elif children.is_public and children.user == user %}
                                 <hr>
-                                <p>Your comment is await for moderation</p>
+                                <p>نظر شما ثبت شده و منتظر تایید است.</p>
                                 {% endif %}
 
                                 {% endfor %}
