@@ -49,8 +49,13 @@
 
  {% if user.is_authenticated %}
                 <form method="POST">{% csrf_token %}
-                    {{form.as_p}}
-                    <button type="submit">add comment</button>
+                   <div class="form-group">
+
+        <label for="comment-body">پیام</label>
+        <textarea class="form-control" id="comment-body" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
+                    <button type="submit">نظردادن</button>
+                   </div>
                 </form>
                 {% endif %}
 
@@ -62,6 +67,8 @@
             <td>
                   {% for comments in post.comments.all %}
                     {% if comments.is_parent and comments.is_public %}
+                 {% with id=1 %}
+                       {% with id=id+1 %}
                 <blockquote>
                 <div id="comments">
 
@@ -76,17 +83,26 @@
 <button>reply</button>
 
                         <form method="POST" style="display:none;" >{% csrf_token %}
-                        {{form.as_p}}
+                                <div class="form-group">
+        <label for="{{ id }}">پیام</label>
+        <textarea class="form-control" id="{{ id }}" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                        <button type="submit">send</button>
+                        <button type="submit">فرستادن</button>
+                                </div>
                     </form>
-                    <button id="show-replies"></button>
+                    <button id="show-replies">نمایش پاسخ ها</button>
                     <div id="replies" style="display:none;">
                     {% endif %}
 
                     {% for children in comments.children %}
-                    {% with comments=comments.children %}
+                        {% with comments=comments.children %}
                     {% endwith %}
+                        {% with replies-id=1 %}
+                       {% with replies-id=replies-id+1 %}
+                        {% endwith %}
+                        {% endwith %}
+
 
 {%if children.is_public %}
 
@@ -98,10 +114,14 @@
      <span></span>
                        <button>reply</button>
                         <form method="POST" style="display:none;"  >{% csrf_token %}
-                        {{form.as_p}}
+                        <div class="form-group">
+        <label for="{{replies-id}}">پیام</label>
+        <textarea class="form-control" id="{{replies-id}}" name="body" cols="5" rows="4" maxlength="250" required="">
+    </textarea>
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
 
-                            <button type="submit">send</button>
+                            <button type="submit">فرستادن</button>
+                        </div>
                         </form>
      {% endif %}
      {% elif children.is_public and children.user == user  %}
@@ -118,7 +138,7 @@
 
 </blockquote>
                 {% elif not comments.is_public and comments.user == user %}
-                <p>Your comment is await for moderation</p>
+                <p>نظر شما ثبت شده و منتظر تایید است.</p>
                  {% endif %}
                 {% endfor %}
 
