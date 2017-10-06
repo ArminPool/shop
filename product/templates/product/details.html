@@ -36,7 +36,7 @@
             </td>
             {% endif %}
         </tr>
-        {% if not user.is_authenticated %}
+       {% if not user.is_authenticated %}
         <tr>
             <td>
             <p>برای نظر دادن ابتدا <a href="/user/register/" >واردشوید</a></p>
@@ -49,13 +49,8 @@
 
  {% if user.is_authenticated %}
                 <form method="POST">{% csrf_token %}
-                                                              <div class="form-group">
- <label for="1-comments">پیام</label>
-        <textarea class="form-control" id="1-comments" name="body" cols="5" rows="4" maxlength="250" required="">
-    </textarea>
-
-                    <button type="submit">فرستادن</button>
-                                                              </div>
+                    {{form.as_p}}
+                    <button type="submit">add comment</button>
                 </form>
                 {% endif %}
 
@@ -71,30 +66,22 @@
                 <div id="comments">
 
                     <p> {{post.comments.all.count}} کامنت </p>
-                    <img src="{{ comments.user.userprofile.pro_img.url }}" style="float:right;height:30px;
-width:30px;">
+
                     <p>{{ comments.user }}</p>
 
 
                      <p>{{ comments.body }}</p>
                     {% if user.is_authenticated %}
                     <span></span>
-<button>پاسخ دادن</button>
+<button>reply</button>
 
                         <form method="POST" style="display:none;" >{% csrf_token %}
-                                                 <div class="form-group">
- <label for="2-comments">پیام</label>
-        <textarea class="form-control" id="2-comments" name="body" cols="5" rows="4" maxlength="250" required="">
-    </textarea>
-
+                        {{form.as_p}}
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                        <button type="submit">فرستادن</button>
-                                                 </div>
+                        <button type="submit">send</button>
                     </form>
                     {% endif %}
-                             <button  id="replies-button" type="submit">مشاهده پاسخ ها </button>
 
- <div class="replies" style="display:none;">
                     {% for children in comments.children %}
                     {% with comments=comments.children %}
                     {% endwith %}
@@ -102,25 +89,16 @@ width:30px;">
 {%if children.is_public %}
 
  <blockquote>
-
-                         <img src="{{ children.user.userprofile.pro_img.url }}" style="float:right;height:30px;
-width:30px;">
-
      {{ children.user }}
 
                     <p>{{ children.body }}</p>
      {% if user.is_authenticated %}
-                                         <span></span>
-<button>پاسخ دادن</button>
+                       <button>show replies</button>
                         <form method="POST" style="display:none;"  >{% csrf_token %}
-                            <div class="form-group">
- <label for="3-comments">پیام</label>
-        <textarea class="form-control" id="3-comments" name="body" cols="5" rows="4" maxlength="250" required="">
-    </textarea>
+                        {{form.as_p}}
                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
 
-                            <button type="submit">فرستادن</button>
-                            </div>
+                            <button type="submit">send</button>
                         </form>
      {% endif %}
      {% elif children.is_public and children.user == user  %}
@@ -133,10 +111,10 @@ width:30px;">
                     <hr>
 </blockquote>
                 </div>
-                </div>
+
 </blockquote>
                 {% elif not comments.is_public and comments.user == user %}
-                <p>نظر شما فرستاده شده و منتظر تایید است</p>
+                <p>Your comment is await for moderation</p>
                  {% endif %}
                 {% endfor %}
 
@@ -159,13 +137,9 @@ $("#comments span + button").click(function(event){
     event.preventDefault();
     $(this).nextAll('form').first().fadeToggle();
 });
-
-$("#replies-button").click(function(event){
-    event.preventDefault();
-    $(#replies).fadeToggle();
-});
 });
 </script>
 
 {% endblock%}
+
 
