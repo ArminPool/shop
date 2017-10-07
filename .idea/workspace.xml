@@ -50,8 +50,8 @@
       <file leaf-file-name="post.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state relative-caret-position="145">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -453,13 +453,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00032" summary="comments changed">
-      <created>1507306103946</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1507306103946</updated>
-    </task>
     <task id="LOCAL-00033" summary="comments changed">
       <created>1507306356198</created>
       <option name="number" value="00033" />
@@ -796,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507367914955</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="post width fixed">
+      <created>1507368153040</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1507368153045</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -860,7 +860,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="# -*- coding: utf-8 -*- added to Usermodel" />
     <MESSAGE value="python added" />
     <MESSAGE value="color mistake in css fixed" />
     <MESSAGE value="product-image field changed to filefield" />
@@ -885,7 +884,8 @@
     <MESSAGE value="footer added and advertising edited" />
     <MESSAGE value="thumbnail width and height changed" />
     <MESSAGE value="hr added again" />
-    <option name="LAST_COMMIT_MESSAGE" value="hr added again" />
+    <MESSAGE value="post width fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="post width fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1244,8 +1244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state relative-caret-position="145">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding />
         </state>
       </provider>
