@@ -51,7 +51,7 @@
                 <form method="POST">{% csrf_token %}
                     <div class="form-group">
 
-        <textarea class="form-control" name="body"  rows="4" cols="20" maxlength="250" required="">
+        <textarea class="form-control" name="body"  rows="4"  maxlength="250" required="">
     </textarea>
                         <button type="submit">ارسال نظر</button>
                     </div>
@@ -93,7 +93,7 @@
 
                         <form method="POST" style="display:none;">{% csrf_token %}
                             <div class="form-group">
-        <textarea class="form-control" name="body" cols="6" rows="4" maxlength="250" required="">
+        <textarea class="form-control" name="body"  rows="4" maxlength="250" required="">
     </textarea>
                                 <input type="hidden" name="parent_id" value="{{comments.pk}}">
                                 <button type="submit">فرستادن</button>
@@ -127,7 +127,7 @@
                                 <button>پاسخ دادن</button>
                                 <form method="POST" style="display:none;">{% csrf_token %}
                                     <div class="form-group">
-        <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
+        <textarea class="form-control" name="body"  rows="4" maxlength="250" required="">
     </textarea>
                                         <input type="hidden" name="parent_id" value="{{comments.pk}}">
 
