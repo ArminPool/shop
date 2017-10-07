@@ -14,14 +14,14 @@ class Home(ListView):
     template_name = 'product/posts.html'
     context_object_name = 'posts'
     # For pagination more detail www.simplebetterthancomplex.com
-    paginate_by = 4
+    paginate_by = 6
     queryset = Post.objects.all()
 
 
 def category(request, product_category):
     posts_list = Post.objects.filter(product_category=product_category)
 
-    paginator = Paginator(posts_list, 1)
+    paginator = Paginator(posts_list, 6)
     template_name = 'product/results.html'
     page = request.GET.get('page', 1)
 
