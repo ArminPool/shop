@@ -179,9 +179,14 @@ margin-left:20px;
 @media only screen and (max-width:750px){
 #footer-right-side{
 float:none;
-padding-right:0px;
+
 
 }
+#footer-right-side ul{
+padding-right:0px;
+}
+
+
 #footer-media{
 text-align:right;
 color:white;
