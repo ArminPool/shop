@@ -44,6 +44,7 @@ height:100px;
 width:100px;
 
 }
-.panel-body{
-padding-bottom:0px;
+.pagination-panel{
+
+display:none;
 }
