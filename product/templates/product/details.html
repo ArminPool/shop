@@ -69,23 +69,21 @@
                 {% if comments.is_parent and comments.is_public %}
 
                 <blockquote>
-                    <div id="comments">
+                    < id="comments">
 
                         <p> {{post.comments.all.count}} کامنت </p>
-                        <div class="comment-img" style="float:right">
 {% if comments.user.userprofile.pro_img %}
-                        <img style=" width:30px;height:30px;float:right;" src="{{ comments.user.userprofile.pro_img.url}}">
+                        <img style=" width:60px;height:60px;float:right;" src="{{ comments.user.userprofile.pro_img.url}}">
 
                                 {% else %}
-                                <img style="width:30px;height:30px;float:right;"
+                                <img style="width:60px;height:60px;float:right;"
                                      src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                 {% endif %}
-                        </div>
-                        <div class="author-details" style="float:left">
-                        <p>{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
-                        <h3 style="color:red">{{ comments.user }}</h3>
+                        <h4>{{ comments.user }}</h4>
+                <br/>
+                        <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
 
-</div>
+
                         <p>{{ comments.body }}</p>
                         {% if user.is_authenticated %}
                         <span></span>
