@@ -16,38 +16,31 @@
 {% block body%}
 <div class="details">
     <div class="container">
-        <div class="table-responsive">
-        <table>
-
-            <tr>
 
 
-                <td id="information">
+
+
+                <div id="information">
                     <p>نام محصول: {{ post.product_name}}</p>
                     <p>قیمت: {{ post.product_prize}}</p>
                     <p>توضیحات: {{ post.product_des}}</p>
-                </td>
-            </tr>
-            <tr>
+                </div>
+
                 {% if user.is_authenticated %}
-                <td id="button">
+                <div id="button">
                     <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
                         <button class="btn btn-primary" type="submit"> افزودن به سبد خرید
                         </button>
                     </a>
-                </td>
+                </div>
                 {% endif %}
-            </tr>
+
             {% if not user.is_authenticated %}
-            <tr>
-                <td>
+
                     <p>برای نظر دادن ابتدا <a href="/user/login/">واردشوید</a></p>
-                </td>
-            </tr>
+
 
             {% endif %}
-            <tr>
-                <td>
 
                     {% if user.is_authenticated %}
                     <form method="POST">{% csrf_token %}
@@ -60,12 +53,6 @@
                     </form>
                     {% endif %}
 
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
                     {% for comments in post.comments.all %}
                     {% if comments.is_parent and comments.is_public %}
 
@@ -160,16 +147,11 @@
                     {% endif %}
                     {% endfor %}
 
-                </td>
-                <td>
 
-                </td>
-            </tr>
 
-        </table>
         </div>
     </div>
-</div>
+
 <script>
 $(document).ready(function() {
 $("#comments span + button").click(function(event){
