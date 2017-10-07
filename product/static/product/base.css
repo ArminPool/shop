@@ -179,16 +179,18 @@ margin-left:20px;
 @media only screen and (max-width:750px){
 #footer-right-side{
 float:none;
+
 }
 #footer-media{
 text-align:right;
 color:white;
+padding-right:20px;
 float:none;
 }
 #footer-copy-right{
 border-bottom:1px solid white;
 color:white;
-padding-right:0px;
+padding-right:20px;
 float:none;
 }
 }
