@@ -8,6 +8,8 @@ body{
     background-image : url("./background.png") ;
     min-width:400px;
     font-family: IRANSans;
+    resize: none;
+
    /* background-repeat: no-repeat;
 */
 

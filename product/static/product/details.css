@@ -18,5 +18,6 @@ textarea {
 }
 .form-group textarea{
 
-min-width: 100%;
+
+max-width:500px;
 }
