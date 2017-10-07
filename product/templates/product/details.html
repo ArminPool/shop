@@ -52,10 +52,11 @@
                 <form method="POST">{% csrf_token %}
                     <div class="form-group">
 
-        <textarea class="form-control" name="body"  rows="4"  maxlength="250" required="" style="width:500px;">
+        <textarea class="form-control" name="body"  rows="4"  maxlength="250" required="" style="">
     </textarea>
-                        <button type="submit">ارسال نظر</button>
+
                     </div>
+                     <button type="submit">ارسال نظر</button>
                 </form>
                 {% endif %}
 
