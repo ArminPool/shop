@@ -72,6 +72,7 @@
                     <div id="comments">
 
                         <p> {{post.comments.all.count}} کامنت </p>
+                        <div class="comment-img" style="float:right">
 {% if comments.user.userprofile.pro_img %}
                         <img style=" width:30px;height:30px;float:right;" src="{{ comments.user.userprofile.pro_img.url}}">
 
@@ -79,10 +80,12 @@
                                 <img style="width:30px;height:30px;float:right;"
                                      src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                 {% endif %}
+                        </div>
+                        <div class="author-details" style="float:left">
                         <p>{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
-                        <p>{{ comments.user }}</p>
+                        <h3 style="color:red">{{ comments.user }}</h3>
 
-
+</div>
                         <p>{{ comments.body }}</p>
                         {% if user.is_authenticated %}
                         <span></span>
@@ -90,7 +93,7 @@
 
                         <form method="POST" style="display:none;">{% csrf_token %}
                             <div class="form-group">
-        <textarea class="form-control" name="body" cols="5" rows="4" maxlength="250" required="">
+        <textarea class="form-control" name="body" cols="6" rows="4" maxlength="250" required="">
     </textarea>
                                 <input type="hidden" name="parent_id" value="{{comments.pk}}">
                                 <button type="submit">فرستادن</button>
@@ -116,9 +119,9 @@
                                      src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                 {% endif %}
                                 {{ children.user }}
-
+<p>{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
                                 <p>{{ children.body }}</p>
-                                <p>{{ children.created }}</p>
+
                                 {% if user.is_authenticated %}
                                 <span></span>
                                 <button>پاسخ دادن</button>
