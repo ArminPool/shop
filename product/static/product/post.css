@@ -30,12 +30,13 @@ margin-top:20px;
 margin-left:20px;
 margin-right:20px;
 border:none;
-max-height:390px;
 
 
 }
 .post .thumbnail img{
 padding-top:10px;
+height:auto;
+width:auto;
 max-width:80%;
 max-height:80%;
 }
