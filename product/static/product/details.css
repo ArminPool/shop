@@ -33,3 +33,7 @@ display:none;
 #see-replies{
 display:none;
 }
+
+#btn-default{
+background-color:#ccc;
+}

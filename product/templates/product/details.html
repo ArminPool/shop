@@ -48,7 +48,7 @@
 
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="" style="">
     </textarea>
-                            <button type="submit">ارسال نظر</button>
+                            <button type="submit" class="btn btn-default">ارسال نظر</button>
 </div>
                     </form>
                     {% endif %}
@@ -163,7 +163,7 @@ $("#comments span + button").click(function(event){
     $(this).nextAll('form').first().fadeToggle();
 });
 
-$("#show-replies").click(function(event){
+$("#see-replies").click(function(event){
     event.preventDefault();
     $("#replies").fadeToggle();
 });
