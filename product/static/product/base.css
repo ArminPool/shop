@@ -121,12 +121,12 @@ padding-right:40px;
 }
 #footer-right-side{
 float:right;
-border-bottom:1px solid white;
 
 }
 
-#footer-right-side ul{
+#footer-right-side p{
 
+border-bottom:1px solid white;
 
 }
 
