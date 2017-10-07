@@ -45,17 +45,17 @@
             </tr>
 
             {% endif %}
-            <tr>
-                <td>
+            <tr style="width:100%;">
+                <td style="width:100%;">
 
                     {% if user.is_authenticated %}
                     <form method="POST">{% csrf_token %}
                         <div class="form-group">
 
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="" style="">
-    </textarea></div>
+    </textarea>
                             <button type="submit">ارسال نظر</button>
-
+</div>
                     </form>
                     {% endif %}
 
