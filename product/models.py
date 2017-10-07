@@ -1,7 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-
 # Create Posts Models for Product which we want to add in our site
 class Post(models.Model):
     product_name = models.CharField(max_length=250)

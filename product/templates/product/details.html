@@ -1,5 +1,6 @@
 {% extends 'product/base.html' %}
 {% load tz %}
+{% load jalali_tags %}
 {% load staticfiles %}
 {% block style %}
 
@@ -78,7 +79,7 @@
                                 <img style="width:30px;height:30px;float:right;"
                                      src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                 {% endif %}
-                        <p>{{ comments.created }}</p>
+                        <p>{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
                         <p>{{ comments.user }}</p>
 
 
