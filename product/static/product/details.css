@@ -10,6 +10,6 @@ left: 70px;
 
 }
 .comment-body{
-min-height:300px;
-border:1px solid black;
+min-height:100px;
+border:1px solid #e5e5e5;
 }
