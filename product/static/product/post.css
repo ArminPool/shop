@@ -43,7 +43,7 @@ text-decoration:none;
 
 @media only screen and (max-width:673px)
 {
-.post .thumbnail {
+.post .thumbnail img{
 
 width:60%;
 height:60%;
