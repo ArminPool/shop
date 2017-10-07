@@ -2,8 +2,8 @@ textarea{
 
 vertical-align: top;
 }
-.form-control{
-max-width:500px ;
+#id_message{
+max-width:500px;
 }
 
 

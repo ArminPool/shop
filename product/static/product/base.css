@@ -10,11 +10,11 @@ body{
     font-family: IRANSans;
     resize: none;
 
-   /* background-repeat: no-repeat;
-*/
-
-
 }
+textarea {
+ resize: none;
+}
+
 ul {
 list-style-type: none;
 }
