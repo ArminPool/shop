@@ -121,11 +121,10 @@ padding-right:40px;
 }
 #footer-right-side{
 float:right;
+border-bottom:1px solid white;
+
 }
-#footer-right-side hr{
-color:white;
-margin:5px;
-}
+
 #footer-right-side ul{
 
 
@@ -176,7 +175,7 @@ margin-left:20px;
 }
 }
 
-@media only screen and (max-width:750px){
+@media only screen and (max-width:980px){
 #footer-right-side{
 float:none;
 
@@ -194,6 +193,7 @@ float:none;
 }
 #footer-copy-right{
 border-bottom:1px solid white;
+
 color:white;
 float:none;
 }
