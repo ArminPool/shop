@@ -184,13 +184,13 @@ float:none;
 #footer-media{
 text-align:right;
 color:white;
-padding-right:20px;
+margin-right:20px;
 float:none;
 }
 #footer-copy-right{
 border-bottom:1px solid white;
 color:white;
-padding-right:20px;
+margin-right:20px;
 float:none;
 }
 }
