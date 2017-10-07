@@ -1,9 +1,9 @@
-#button{
+#add-basket-button{
 position:relative;
 right:70px;
 }
 
-#button button{
+#add-basket-button button{
 
 position : relative;
 left: 70px;
@@ -16,4 +16,20 @@ border:1px solid #e5e5e5;
 
 .form-control{
 max-width:700px;
+}
+#comments img{
+width:60px;
+height:60px;
+float:right;
+}
+#comments h4 {
+position:relative;
+top:20px;
+right:10px;
+}
+.reply-to-comments form{
+display:none;
+}
+#see-replies{
+display:none;
 }

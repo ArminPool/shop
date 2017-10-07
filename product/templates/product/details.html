@@ -27,7 +27,7 @@
                 </div>
 
                 {% if user.is_authenticated %}
-                <div id="button">
+                <div id="add-basket-button">
                     <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
                         <button class="btn btn-primary" type="submit"> افزودن به سبد خرید
                         </button>
@@ -61,15 +61,15 @@
 
                             <p> {{post.comments.all.count}} کامنت </p>
                             {% if comments.user.userprofile.pro_img %}
-                            <img style=" width:60px;height:60px;float:right;"
+                            <img
                                  src="{{ comments.user.userprofile.pro_img.url}}">
 
                             {% else %}
-                            <img style="width:60px;height:60px;float:right;"
+                            <img
                                  src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                             {% endif %}
 
-                            <h4 style="position:relative;top:20px;right:10px;">{{ comments.user }}</h4>
+                            <h4 >{{ comments.user }}</h4>
                             <br/>
                             <br/>
                             <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
@@ -80,19 +80,19 @@
                             {% if user.is_authenticated %}
                             <span></span>
                             <button>پاسخ دادن</button>
-
-                            <form method="POST" style="display:none;">{% csrf_token %}
+<div class="reply-to-comments">
+                            <form method="POST" style="">{% csrf_token %}
                                 <div class="form-group">
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
     </textarea></div>
                                     <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                                <button type="submit">فرستادن</button>
-
-
-
+                                <button type="submit"  class="btn btn-default btn-sm" >فرستادن</button>
                             </form>
-                            <button id="show-replies">نمایش پاسخ ها</button>
-                            <div id="replies" style="display:none;">
+
+
+                            </div>
+                            <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
+                            <div id="see-replies" >
                                 {% endif %}
 
                                 {% for children in comments.children %}
@@ -104,11 +104,11 @@
 
                                 <blockquote>
                                     {% if children.user.userprofile.pro_img %}
-                                    <img style=" width:30px;height:30px;float:right;"
+                                    <img
                                          src="{{ children.user.userprofile.pro_img.url}}">
 
                                     {% else %}
-                                    <img style="width:30px;height:30px;float:right;"
+                                    <img
                                          src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                     {% endif %}
                                     {{ children.user }}
@@ -120,16 +120,18 @@
                                     {% if user.is_authenticated %}
                                     <span></span>
                                     <button>پاسخ دادن</button>
+                                    <div class="reply-to-replies">
                                     <form method="POST" style="display:none;">{% csrf_token %}
                                         <div class="form-group">
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
     </textarea><input type="hidden" name="parent_id" value="{{comments.pk}}">
 
-                                            <button type="submit">فرستادن</button>
+                                            <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
                                         </div>
 
 
                                     </form>
+                                        </div>
                                     {% endif %}
                                     {% elif children.is_public and children.user == user %}
                                     <hr>
