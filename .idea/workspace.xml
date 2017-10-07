@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/post.css" afterPath="$PROJECT_DIR$/product/static/product/post.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/Advertising.html" afterPath="$PROJECT_DIR$/product/templates/product/Advertising.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/base.html" afterPath="$PROJECT_DIR$/product/templates/product/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -455,13 +452,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00026" summary="test done">
-      <created>1507279116501</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1507279116501</updated>
-    </task>
     <task id="LOCAL-00027" summary="comments changed">
       <created>1507305366454</created>
       <option name="number" value="00027" />
@@ -798,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507361481737</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="footer added and advertising edited">
+      <created>1507367077040</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1507367077040</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="ToolWindowManager">
