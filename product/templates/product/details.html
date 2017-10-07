@@ -69,7 +69,7 @@
                 {% if comments.is_parent and comments.is_public %}
 
                 <blockquote>
-                    < id="comments">
+                    <div id="comments">
 
                         <p> {{post.comments.all.count}} کامنت </p>
 {% if comments.user.userprofile.pro_img %}
@@ -79,8 +79,9 @@
                                 <img style="width:60px;height:60px;float:right;"
                                      src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                 {% endif %}
-                        <h4>{{ comments.user }}</h4>
+                        <h4 style="position:relative;top:7px;">{{ comments.user }}</h4>
                 <br/>
+                         <br/>
                         <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
 
 
