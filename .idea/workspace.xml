@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
+    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="comment styles moved to css">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/details.css" afterPath="$PROJECT_DIR$/product/static/product/details.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/details.html" afterPath="$PROJECT_DIR$/product/templates/product/details.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,9 +60,12 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1188">
+              <caret line="83" column="69" lean-forward="false" selection-start-line="83" selection-start-column="69" selection-end-line="83" selection-end-column="69" />
+              <folding>
+                <element signature="n#style#0;n#form#0;n#div#0;n#blockquote#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#blockquote#0;n#div#1;n#div#0;n#blockquote#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,8 +176,8 @@
         <option value="$PROJECT_DIR$/product/templates/product/UsersContact.html" />
         <option value="$PROJECT_DIR$/product/static/product/base.css" />
         <option value="$PROJECT_DIR$/product/static/product/UsersContact.css" />
-        <option value="$PROJECT_DIR$/product/templates/product/details.html" />
         <option value="$PROJECT_DIR$/product/static/product/details.css" />
+        <option value="$PROJECT_DIR$/product/templates/product/details.html" />
       </list>
     </option>
   </component>
@@ -439,13 +441,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00055" summary="jalali celender test1">
-      <created>1507345473218</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1507345473218</updated>
     </task>
     <task id="LOCAL-00056" summary="comment front-end changed">
       <created>1507345788234</created>
@@ -783,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507380059064</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="comment styles moved to css">
+      <created>1507381018059</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1507381018061</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -847,7 +849,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="comment input changed" />
     <MESSAGE value="caption removed from carousel" />
     <MESSAGE value="text ignoring" />
     <MESSAGE value="test done" />
@@ -872,7 +873,8 @@
     <MESSAGE value="table width changed" />
     <MESSAGE value="table deleted from details" />
     <MESSAGE value="text areas all fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="text areas all fixed" />
+    <MESSAGE value="comment styles moved to css" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment styles moved to css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1224,9 +1226,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1188">
+          <caret line="83" column="69" lean-forward="false" selection-start-line="83" selection-start-column="69" selection-end-line="83" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#0;n#blockquote#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#blockquote#0;n#div#1;n#div#0;n#blockquote#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

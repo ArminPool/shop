@@ -79,9 +79,9 @@
                             </div>
                             {% if user.is_authenticated %}
                             <span></span>
-                            <button>پاسخ دادن</button>
-<div class="reply-to-comments">
-                            <form method="POST" style="">{% csrf_token %}
+                            <button class="btn btn-default btn-sm">پاسخ دادن</button>
+
+                            <form method="POST" style="display:none;">{% csrf_token %}
                                 <div class="form-group">
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
     </textarea></div>
@@ -90,7 +90,7 @@
                             </form>
 
 
-                            </div>
+
                             <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
                             <div id="see-replies" >
                                 {% endif %}
@@ -120,7 +120,7 @@
                                     {% if user.is_authenticated %}
                                     <span></span>
                                     <button>پاسخ دادن</button>
-                                    <div class="reply-to-replies">
+
                                     <form method="POST" style="display:none;">{% csrf_token %}
                                         <div class="form-group">
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
@@ -131,7 +131,7 @@
 
 
                                     </form>
-                                        </div>
+
                                     {% endif %}
                                     {% elif children.is_public and children.user == user %}
                                     <hr>
