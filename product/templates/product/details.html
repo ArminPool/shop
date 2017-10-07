@@ -21,6 +21,7 @@
 
 
                 <div id="information">
+                    <img src="{{post.product_img.url}}">
                     <p>نام محصول: {{ post.product_name}}</p>
                     <p>قیمت: {{ post.product_prize}}</p>
                     <p>توضیحات: {{ post.product_des}}</p>
@@ -69,7 +70,7 @@
                                  src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                             {% endif %}
 
-                            <h4 >{{ comments.user }}</h4>
+                            <h4>{{ comments.user }}</h4>
                             <br/>
                             <br/>
                             <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
@@ -111,7 +112,7 @@
                                     <img
                                          src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
                                     {% endif %}
-                                    {{ children.user }}
+                                    <h4> {{ children.user }}</h4>
                                     <p>{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
                                     <div class="comment-body">
                                     <p>{{ children.body }}</p>

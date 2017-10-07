@@ -47,6 +47,11 @@ margin-left:1px;
 border-radius:0px;
 
 }
+.nav-prof-img
+{
+width:30px;
+height:30px;
+}
 .pagination-panel{
 border:none;
 margin-right:10px;
@@ -114,7 +119,9 @@ background-color:#222222;
 color:white;
 height:auto;
 border-top:2px solid white;
-
+border-radius:0px;
+position:relative;
+top:200px;
 
 }
 .panel-footer .row{
