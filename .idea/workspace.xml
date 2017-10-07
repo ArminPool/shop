@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/UsersContact.css" afterPath="$PROJECT_DIR$/product/static/product/UsersContact.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/UsersContact.html" afterPath="$PROJECT_DIR$/product/templates/product/UsersContact.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/product/templates/product/UsersContact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
+              <caret line="40" column="70" lean-forward="false" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -90,8 +91,8 @@
       <file leaf-file-name="UsersContact.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/UsersContact.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="182">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,7 +140,6 @@
         <option value="$PROJECT_DIR$/product/templates/product/Contact.html" />
         <option value="$PROJECT_DIR$/product/static/product/GuestContact.css" />
         <option value="$PROJECT_DIR$/product/templates/product/GuestContact.html" />
-        <option value="$PROJECT_DIR$/product/static/product/UsersContact.css" />
         <option value="$PROJECT_DIR$/User/templates/User/logout.html" />
         <option value="$PROJECT_DIR$/search_indexes.py" />
         <option value="$PROJECT_DIR$/product/form.py" />
@@ -175,6 +175,7 @@
         <option value="$PROJECT_DIR$/product/templates/product/details.html" />
         <option value="$PROJECT_DIR$/product/static/product/details.css" />
         <option value="$PROJECT_DIR$/product/templates/product/UsersContact.html" />
+        <option value="$PROJECT_DIR$/product/static/product/UsersContact.css" />
       </list>
     </option>
   </component>
@@ -438,13 +439,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00043" summary="comments changed">
-      <created>1507315792479</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1507315792479</updated>
     </task>
     <task id="LOCAL-00044" summary="comments changed">
       <created>1507316286754</created>
@@ -782,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507370770586</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="user contact text area check">
+      <created>1507371505934</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1507371505934</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -846,7 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="product-image field changed to filefield" />
     <MESSAGE value="crousel image changed and css changed" />
     <MESSAGE value="comment moderation language and button lang changed" />
     <MESSAGE value="image added to comments" />
@@ -871,7 +871,8 @@
     <MESSAGE value="post width fixed" />
     <MESSAGE value="col check" />
     <MESSAGE value="comment text area size text" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment text area size text" />
+    <MESSAGE value="user contact text area check" />
+    <option name="LAST_COMMIT_MESSAGE" value="user contact text area check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1197,6 +1198,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/details.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1207,16 +1216,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/UsersContact.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1224,7 +1225,7 @@
     <entry file="file://$PROJECT_DIR$/product/templates/product/UsersContact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
+          <caret line="40" column="70" lean-forward="false" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
           <folding />
         </state>
       </provider>
