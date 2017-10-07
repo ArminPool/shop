@@ -34,6 +34,13 @@ max-height:390px;
 
 
 }
+@media only screen and (max-width:673px)
+{
+.post .thumbnail img{
+
+width:80%;
+height:80%;
+}
 
 
 

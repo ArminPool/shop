@@ -124,11 +124,6 @@ float:right;
 
 }
 
-#footer-right-side a{
-
-border-bottom:1px solid white;
-
-}
 
 
 #footer-right-side a{
@@ -140,6 +135,10 @@ padding-top:8px;
 
 }
 
+#footer-right-side hr{
+color:white;
+margin:5px;
+}
 #footer-right-side p{
 color:white;
 text-decoration:none;
@@ -196,6 +195,12 @@ border-bottom:1px solid white;
 
 color:white;
 float:none;
+}
+
+#footer-right-side {
+
+border-bottom:1px solid white;
+
 }
 }
 
