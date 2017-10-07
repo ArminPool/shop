@@ -5,5 +5,7 @@ vertical-align: top;
 #id_message{
 max-width:500px;
 }
+#id_issue_options{
 
-
+max-width:200px;
+}

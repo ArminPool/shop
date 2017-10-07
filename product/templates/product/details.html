@@ -113,7 +113,9 @@
                                     {% endif %}
                                     {{ children.user }}
                                     <p>{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
+                                    <div class="comment-body">
                                     <p>{{ children.body }}</p>
+                                    </div>
 
                                     {% if user.is_authenticated %}
                                     <span></span>
