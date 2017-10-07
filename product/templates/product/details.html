@@ -1,5 +1,4 @@
 {% extends 'product/base.html' %}
-{% load tz %}
 {% load jalali_tags %}
 {% load staticfiles %}
 {% block style %}
@@ -52,7 +51,7 @@
                 <form method="POST">{% csrf_token %}
                     <div class="form-group">
 
-        <textarea class="form-control" name="body" cols="20" rows="4" maxlength="250" required="">
+        <textarea class="form-control" name="body"  rows="4" cols="20" maxlength="250" required="">
     </textarea>
                         <button type="submit">ارسال نظر</button>
                     </div>
