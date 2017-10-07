@@ -16,7 +16,7 @@ border:1px solid #e5e5e5;
 textarea {
  resize: none;
 }
-.form-group textarea{
+.form-group {
 
 
 max-width:500px;

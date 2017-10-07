@@ -1,7 +1,9 @@
-.form-control textarea{
+textarea{
 
 vertical-align: top;
-max-width:500px;
-
 }
+.form-control{
+max-width:500px ;
+}
+
 
