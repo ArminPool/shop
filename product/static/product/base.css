@@ -115,7 +115,7 @@ border-top:2px solid white;
 
 
 }
-.panel-footer .post{
+.panel-footer .row{
 padding-left:40px;
 padding-right:40px;
 }
@@ -179,18 +179,17 @@ margin-left:20px;
 @media only screen and (max-width:750px){
 #footer-right-side{
 float:none;
+padding-right:0px;
 
 }
 #footer-media{
 text-align:right;
 color:white;
-margin-right:20px;
 float:none;
 }
 #footer-copy-right{
 border-bottom:1px solid white;
 color:white;
-margin-right:20px;
 float:none;
 }
 }
