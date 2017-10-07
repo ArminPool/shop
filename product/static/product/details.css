@@ -17,6 +17,6 @@ textarea {
  resize: none;
 }
 .form-group textarea{
-;
-min-width: 100%
+
+min-width: 100%;
 }
