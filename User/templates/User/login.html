@@ -7,15 +7,17 @@
     <h3>ورود:</h3>
     <form method="post">
         {% csrf_token %}
+        <div class="form-control">
         <p>
                 <label for="id_username">نام کاربری</label>
-                <input id="id_username" name="username" autofocus="" required="" type="text">
+                <input class="form-control" id="id_username" name="username" autofocus="" required="" type="text">
             </p>
         <p>
                 <label for="id_password">رمز عبور</label>
-                <input id="id_password" name="password" autofocus="" required="" type="password">
+                <input class="form-control" id="id_password" name="password" autofocus="" required="" type="password">
             </p>
         <button type="submit">ورود</button>
+        </div>
     </form>
 &nbsp;
     <p> اگر تا الان ثبت نام نکرده اید بر روی  <a href="/user/register">ثبت نام &nbsp;</a>کلیک کنید

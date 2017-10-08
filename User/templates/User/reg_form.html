@@ -1,5 +1,9 @@
 {% extends 'product/base.html' %}
 
+{% load staticfiles %}
+{% block title %}
+<title>فرم ثبت نام</title>
+{% endblock %}
 
 {% block body %}
 <div class="container">
@@ -28,59 +32,43 @@
 <div class="registration">
     <form method="post" novalidate>
         {% csrf_token %}
+<div class="form-group">
+       <p>
+                <label for="id_username">نام کاربری</label>
+                <input class="form-control" id="id_username" name="username" autofocus="" required="" type="text">
+            </p>
+   <p>
+                <label for="first_name">نام </label>
+                <input class="form-control" id="first_name" name="first_name" autofocus="" required="" type="text">
+            </p>
+    <p>
+                <label for="last_name">نام خانوادگی</label>
+                <input class="form-control" id="last_name" name="last_name" autofocus="" required="" type="text">
+            </p>
+    <p>
+                <label for="phone_number">شماره تلفن همراه</label>
+                <input class="form-control" id="phone_number" name="phone_number" autofocus="" required="" type="text">
+            </p>
+    <p>
+                <label for="password1">رمز عبور</label>
+                <input class="form-control" id="password1" name="password1" autofocus="" required="" type="text">
+            </p>
 
-
-        <table>
-            <tr style="display:inline">
-                <td>
-
-                    <p style="position:relative;right:2px;">نام حساب کاربری : {{ form1.username }}</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p style="position:relative">نام : {{ form1.first_name }}</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <br>
-                    <p style="position:relative">نام خانوادگی : {{ form1.last_name }}</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <br>
-                    <p style="position:relative;"> ایمیل: {{form1.email}}</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <br>
-                    <p style="position:relative">شماره تلفن : {{ form2.phone_number }}</p>
-                </td>
-            <tr>
-                <td>
-                    <br>
-                    <p style="position:relative">رمز عبود : {{ form1.password1 }}</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-
-                    <br>
-                    <p style="position:relative">تکرار رمز عبور : {{ form1.password2 }}</p>
-
-                </td>
-            </tr>
-
-        </table>
+    <p>
+                <label for="password2">تکرار رمز</label>
+                <input class="form-control" id="password2" name="password2" autofocus="" required="" type="text">
+            </p>
 
         <button type="submit">تایید</button>
+
+</div>
     </form>
+
+
 {% else %}
     <p>  شما قبلا ثبت نام شده اید .برای مشاهده حساب کاربری خود  بر روی لینک زیر کلیک کنید</p>
     <a href="{% url 'user:view_profile' %}">حساب کاربری</a>
 {% endif %}
     {% endblock %}
+</div>
 </div>
