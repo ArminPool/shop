@@ -1,3 +1,6 @@
 .registration .form-group .form-control{
 max-width:300px;
 }
+button{
+margin-bottom:10px;
+}
