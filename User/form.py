@@ -4,7 +4,6 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
-
 from User.models import UserProfile, UsersMessage, GuestMessage
 
 
@@ -23,6 +22,7 @@ class RegistrationForm(UserCreationForm):
             'password2',
 
         }
+
     # Here is what we did :Customize  Customize  Customize Cuz the main problem is errors should be Persian
 
     def clean(self):
@@ -36,11 +36,10 @@ class RegistrationForm(UserCreationForm):
         try:
             if username or email or password1 or password2 or first_name or last_name is None:
                 print("Nothing entered")
-                self.add_error('None', 'لطفا تمام  فیلد ها را پر کنید!')
+                self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
             elif User.objects.get(username=username):
                 print("user found")
                 self.add_error('username', 'این نام کاربری وجود دارد.')
-
 
         except User.DoesNotExist:
             try:
@@ -90,7 +89,9 @@ class ProfileForm(forms.ModelForm):
         phone_number = cleaned_data.get('phone_number')
         regex = r'0\d{10}'
         print('form2 lvl1')
-        if not re.match(regex, phone_number):
+        if phone_number is None:
+            self.add_error(None, 'لطفا ایمیل خود را وارد کنید!')
+        elif not re.match(regex, phone_number):
             self.add_error('phone_number', 'شماره تلفن درست وارد نشده!!!')
             print('form2 lvl2')
 

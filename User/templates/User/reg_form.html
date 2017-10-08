@@ -14,11 +14,19 @@
     {% if not user.is_authenticate %}
 
     <h2>ثبت نام</h2>
-    {% if form1.errors or form2.errors %}
+     {% if form1.non_field_errors or form2.non_field_errors %}
     <div class="alert alert-danger">
         {% if form1.non_field_errors %}
+
         {{ form1.non_field_errors}}
-        {% else %}
+    {% else %}
+        {{ form2.non_field_errors}}
+    {% endif %}
+    </div>
+    {% else %}
+    {% if form1.errors or form2.errors %}
+    <div class="alert alert-danger">
+
         {% if form1.username.errors %}
         <p>{{ form1.username.errors }} </p>
         {% endif %}
