@@ -40,11 +40,21 @@ background-color:#F5F5F5;
 }
 #information img{
 
-height:100px;
-width:100px;
+height:200px;
+width:200px;
 
 }
 .pagination-panel{
 
 display:none;
+}
+@media only screen and (max-width:780px){
+
+panel-footer{
+
+position:relative;
+left:15px;
+
+}
+
 }
