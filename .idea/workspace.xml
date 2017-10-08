@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/static/User/login.css" afterPath="$PROJECT_DIR$/User/static/User/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/login.html" afterPath="$PROJECT_DIR$/User/templates/User/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +50,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User/templates/User/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -152,9 +152,9 @@
         <option value="$PROJECT_DIR$/shop/settings.py" />
         <option value="$PROJECT_DIR$/User/templates/User/reg_form.html" />
         <option value="$PROJECT_DIR$/User/form.py" />
-        <option value="$PROJECT_DIR$/User/templates/User/login.html" />
         <option value="$PROJECT_DIR$/User/static/User/reg-form.css" />
         <option value="$PROJECT_DIR$/User/static/User/login.css" />
+        <option value="$PROJECT_DIR$/User/templates/User/login.html" />
       </list>
     </option>
   </component>
@@ -333,13 +333,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00085" summary="col check">
-      <created>1507369285749</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1507369285749</updated>
     </task>
     <task id="LOCAL-00086" summary="comment text area size text">
       <created>1507369725022</created>
@@ -677,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507480480529</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="margin added to last elements inside this files(fixed)">
+      <created>1507480675358</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1507480675358</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -767,7 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="text areas all fixed" />
     <MESSAGE value="comment styles moved to css" />
     <MESSAGE value="default btn color and jq id fixed" />
     <MESSAGE value="margin added to button" />
@@ -792,7 +791,8 @@
     <MESSAGE value="form2 none field edit and form 1 too.login css added reg form email field fixed" />
     <MESSAGE value="loadstaticfiles added to login and i used not rather than None in  form 1 clean" />
     <MESSAGE value="margin added to last elements inside this files" />
-    <option name="LAST_COMMIT_MESSAGE" value="margin added to last elements inside this files" />
+    <MESSAGE value="margin added to last elements inside this files(fixed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="margin added to last elements inside this files(fixed)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1139,8 +1139,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User/templates/User/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="442">
+          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
           <folding />
         </state>
       </provider>
