@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/form.py" afterPath="$PROJECT_DIR$/User/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/login.html" afterPath="$PROJECT_DIR$/User/templates/User/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/static/User/login.css" afterPath="$PROJECT_DIR$/User/static/User/login.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +50,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User/templates/User/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="364">
+              <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -61,8 +60,18 @@
       <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User/static/User/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="78">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg-form.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/User/static/User/reg-form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/error/form-rendering-examples-master/mysite/forms.py" />
         <option value="E:/Users/armin/AppData/Local/Programs/Python/Python36-32/Lib/tkinter/ttk.py" />
         <option value="$PROJECT_DIR$/User/templates/User/change_password.html" />
         <option value="$PROJECT_DIR$/User/static/User/change-password.css" />
@@ -143,9 +151,10 @@
         <option value="$PROJECT_DIR$/User/views.py" />
         <option value="$PROJECT_DIR$/shop/settings.py" />
         <option value="$PROJECT_DIR$/User/templates/User/reg_form.html" />
-        <option value="$PROJECT_DIR$/User/static/User/login.css" />
         <option value="$PROJECT_DIR$/User/form.py" />
         <option value="$PROJECT_DIR$/User/templates/User/login.html" />
+        <option value="$PROJECT_DIR$/User/static/User/reg-form.css" />
+        <option value="$PROJECT_DIR$/User/static/User/login.css" />
       </list>
     </option>
   </component>
@@ -324,13 +333,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00084" summary="post width fixed">
-      <created>1507368931799</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1507368931799</updated>
     </task>
     <task id="LOCAL-00085" summary="col check">
       <created>1507369285749</created>
@@ -668,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507479860418</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="margin added to last elements inside this files">
+      <created>1507480480529</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1507480480529</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -758,7 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="table deleted from details" />
     <MESSAGE value="text areas all fixed" />
     <MESSAGE value="comment styles moved to css" />
     <MESSAGE value="default btn color and jq id fixed" />
@@ -783,7 +791,8 @@
     <MESSAGE value="form2 none field added and form 1 none field errors edited" />
     <MESSAGE value="form2 none field edit and form 1 too.login css added reg form email field fixed" />
     <MESSAGE value="loadstaticfiles added to login and i used not rather than None in  form 1 clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="loadstaticfiles added to login and i used not rather than None in  form 1 clean" />
+    <MESSAGE value="margin added to last elements inside this files" />
+    <option name="LAST_COMMIT_MESSAGE" value="margin added to last elements inside this files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -792,7 +801,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/product/templates/product/Contact.html" />
     <entry file="file://$PROJECT_DIR$/product/static/product/contact.css" />
     <entry file="file://$PROJECT_DIR$/product/templates/product/GuestContact.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1087,14 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/static/User/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/User/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1121,10 +1121,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/User/static/User/reg-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/static/User/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/User/templates/User/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="364">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="22" />
           <folding />
         </state>
       </provider>
