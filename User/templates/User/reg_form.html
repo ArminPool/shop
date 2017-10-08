@@ -2,7 +2,7 @@
 
 {% load staticfiles %}
 {% block style %}
-<link rel="stylesheet" type="text/css" href="{% static 'product/registration.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'User/registration.css' %}"/>
 {% endblock %}
 {% block title %}
 <title>فرم ثبت نام</title>
@@ -50,17 +50,21 @@
                 <input class="form-control" id="last_name" name="last_name" autofocus="" required="" type="text">
             </p>
     <p>
+        <p>
+                <label for="email">رمز عبور</label>
+                <input class="form-control" id="email" name="email" autofocus="" required="" type="email">
+            </p>
                 <label for="phone_number">شماره تلفن همراه</label>
                 <input class="form-control" id="phone_number" name="phone_number" autofocus="" required="" type="text">
             </p>
     <p>
                 <label for="password1">رمز عبور</label>
-                <input class="form-control" id="password1" name="password1" autofocus="" required="" type="text">
+                <input class="form-control" id="password1" name="password1" autofocus="" required="" type="password">
             </p>
 
     <p>
                 <label for="password2">تکرار رمز</label>
-                <input class="form-control" id="password2" name="password2" autofocus="" required="" type="text">
+                <input class="form-control" id="password2" name="password2" autofocus="" required="" type="password">
             </p>
 
         <button type="submit">تایید</button>
