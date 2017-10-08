@@ -17,7 +17,7 @@
     {% if form1.errors or form2.errors %}
     <div class="alert alert-danger">
         {% if form1.non_field_errors %}
-        {{if form1.non_field_errors}}
+        {{ form1.non_field_errors}}
         {% else %}
         {% if form1.username.errors %}
         <p>{{ form1.username.errors }} </p>
