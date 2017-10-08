@@ -28,8 +28,8 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+            <state relative-caret-position="260">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -291,13 +291,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00094" summary="user contact text area check">
-      <created>1507371631314</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1507371631314</updated>
     </task>
     <task id="LOCAL-00095" summary="user contact text area changed">
       <created>1507377088777</created>
@@ -635,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507487266360</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="min width set for footer">
+      <created>1507491114200</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1507491114200</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -725,7 +725,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="paginate-by increased" />
     <MESSAGE value="details edited" />
     <MESSAGE value="details footer moved edited" />
     <MESSAGE value="details footer fix test" />
@@ -750,7 +749,8 @@
     <MESSAGE value="margin added again and background-attachment test" />
     <MESSAGE value="pagination-panel block edited" />
     <MESSAGE value="search process test" />
-    <option name="LAST_COMMIT_MESSAGE" value="search process test" />
+    <MESSAGE value="min width set for footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="min width set for footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1111,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+        <state relative-caret-position="260">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding />
         </state>
       </provider>

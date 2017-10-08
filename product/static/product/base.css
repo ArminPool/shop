@@ -9,7 +9,9 @@ body{
     min-width:400px;
     font-family: IRANSans;
     resize: none;
-
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 
 
