@@ -1,13 +1,19 @@
 {% extends 'product/base.html' %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'User/login.css' %}"/>
+{% endblock %}
+{% block title %}
+<title>ورود</title>
+{% endblock %}
 
 {% block body %}
-<div class="container">
+
     <h2>خوش آمدید</h2>
 
     <h3>ورود:</h3>
     <form method="post">
         {% csrf_token %}
-        <div class="form-control">
+        <div class="form-group">
         <p>
                 <label for="id_username">نام کاربری</label>
                 <input class="form-control" id="id_username" name="username" autofocus="" required="" type="text">
@@ -21,5 +27,5 @@
     </form>
 &nbsp;
     <p> اگر تا الان ثبت نام نکرده اید بر روی  <a href="/user/register">ثبت نام &nbsp;</a>کلیک کنید</p>
-</div>
+
 {% endblock %}
