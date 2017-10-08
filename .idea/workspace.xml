@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/product/static/product/background.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/base.css" afterPath="$PROJECT_DIR$/product/static/product/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/posts.html" afterPath="$PROJECT_DIR$/product/templates/product/posts.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,18 +18,38 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="-2412">
               <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="-2488">
               <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -93,7 +112,6 @@
         <option value="$PROJECT_DIR$/product/static/product/details.css" />
         <option value="$PROJECT_DIR$/product/templates/product/details.html" />
         <option value="$PROJECT_DIR$/product/static/product/post.css" />
-        <option value="$PROJECT_DIR$/product/templates/product/posts.html" />
         <option value="$PROJECT_DIR$/product/templates/product/base.html" />
         <option value="$PROJECT_DIR$/User/static/User/registration.css" />
         <option value="$PROJECT_DIR$/User/views.py" />
@@ -104,12 +122,13 @@
         <option value="$PROJECT_DIR$/User/static/User/login.css" />
         <option value="$PROJECT_DIR$/User/templates/User/login.html" />
         <option value="$PROJECT_DIR$/product/static/product/base.css" />
+        <option value="$PROJECT_DIR$/product/templates/product/posts.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="16" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -282,13 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00089" summary="comment text area size text">
-      <created>1507370552267</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1507370552267</updated>
     </task>
     <task id="LOCAL-00090" summary="comment text area size text">
       <created>1507370753678</created>
@@ -626,11 +638,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507484295231</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="margin added again and background-attachment test">
+      <created>1507485209209</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1507485209209</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="16" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -716,7 +735,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="review changed added" />
     <MESSAGE value="category linked edited" />
     <MESSAGE value="product_img in details edited" />
     <MESSAGE value="paginate-by increased" />
@@ -741,7 +759,8 @@
     <MESSAGE value="container added to login" />
     <MESSAGE value="background img setting edited" />
     <MESSAGE value="margin deleted for jumbotron" />
-    <option name="LAST_COMMIT_MESSAGE" value="margin deleted for jumbotron" />
+    <MESSAGE value="margin added again and background-attachment test" />
+    <option name="LAST_COMMIT_MESSAGE" value="margin added again and background-attachment test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -994,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/details.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
@@ -1075,15 +1087,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="234">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="-2412">
           <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
         </state>
@@ -1091,8 +1103,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="-2488">
           <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/templates/product/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding />
         </state>
       </provider>
