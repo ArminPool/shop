@@ -43,7 +43,7 @@ def register(request):
             form1 = RegistrationForm(request.POST)
             form2 = ProfileForm(request.POST)
 
-            args = {'form1': form1, 'form2': form2, }
+            args = {'form1': form1, 'form2': form2,}
             return render(request, 'User/reg_form.html', args)
     else:
         form1 = RegistrationForm()

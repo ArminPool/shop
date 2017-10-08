@@ -34,9 +34,13 @@ class RegistrationForm(UserCreationForm):
         password1 = cleaned_data.get('password1')
         password2 = cleaned_data.get('password2')
         try:
-            if User.objects.get(username=username):
+            if username or email or password1 or password2 or first_name or last_name is None:
+                print("Nothing entered")
+                self.add_error('None', 'لطفا تمام  فیلد ها را پر کنید!')
+            elif User.objects.get(username=username):
                 print("user found")
                 self.add_error('username', 'این نام کاربری وجود دارد.')
+
 
         except User.DoesNotExist:
             try:
