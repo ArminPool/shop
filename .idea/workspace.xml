@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/form.py" afterPath="$PROJECT_DIR$/User/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/login.html" afterPath="$PROJECT_DIR$/User/templates/User/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/reg_form.html" afterPath="$PROJECT_DIR$/User/templates/User/reg_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/views.py" afterPath="$PROJECT_DIR$/User/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/settings.py" afterPath="$PROJECT_DIR$/shop/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User/templates/User/reg_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="494">
+              <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -102,7 +109,6 @@
         <option value="$PROJECT_DIR$/db.sqlite3" />
         <option value="$PROJECT_DIR$/shop/urls.py" />
         <option value="$PROJECT_DIR$/product/models.py" />
-        <option value="$PROJECT_DIR$/shop/settings.py" />
         <option value="$PROJECT_DIR$/product/templates/product/advertising.html" />
         <option value="$PROJECT_DIR$/product/templates/product/UsersContact.html" />
         <option value="$PROJECT_DIR$/product/static/product/UsersContact.css" />
@@ -118,6 +124,7 @@
         <option value="$PROJECT_DIR$/User/views.py" />
         <option value="$PROJECT_DIR$/User/form.py" />
         <option value="$PROJECT_DIR$/User/templates/User/reg_form.html" />
+        <option value="$PROJECT_DIR$/shop/settings.py" />
       </list>
     </option>
   </component>
@@ -296,13 +303,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00078" summary="thumbnail width and height changed">
-      <created>1507367405634</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1507367405634</updated>
     </task>
     <task id="LOCAL-00079" summary="thumbnail width and height changed">
       <created>1507367478095</created>
@@ -640,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507471654065</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="none field errors added to registration and login fixed">
+      <created>1507472844183</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1507472844183</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -730,7 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="post width fixed" />
     <MESSAGE value="col check" />
     <MESSAGE value="comment text area size text" />
     <MESSAGE value="user contact text area check" />
@@ -755,7 +761,8 @@
     <MESSAGE value="registrations.css changed" />
     <MESSAGE value="registrations.css changed also form field type" />
     <MESSAGE value="padding added to row inside panel-footer and submit button moved outside of registration form-group" />
-    <option name="LAST_COMMIT_MESSAGE" value="padding added to row inside panel-footer and submit button moved outside of registration form-group" />
+    <MESSAGE value="none field errors added to registration and login fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="none field errors added to registration and login fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -953,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1104,8 +1104,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User/templates/User/reg_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="494">
+          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>
