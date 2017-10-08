@@ -9,6 +9,9 @@ body{
     min-width:400px;
     font-family: IRANSans;
     resize: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 
 }
 textarea {
@@ -19,6 +22,9 @@ ul {
 list-style-type: none;
 }
 
+a{
+text-decoration:none;
+}
 /*
 -------------------
         jumbotron
