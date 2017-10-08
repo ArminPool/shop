@@ -18,146 +18,142 @@
     <div class="container">
 
 
+        <div id="information">
+            <img src="{{post.product_img.url}}">
+            <p>نام محصول: {{ post.product_name}}</p>
+            <p>قیمت: {{ post.product_prize}}</p>
+            <p>توضیحات: {{ post.product_des}}</p>
+        </div>
+
+        {% if user.is_authenticated %}
+        <div id="add-basket-button">
+            <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
+                <button class="btn btn-primary" type="submit"> افزودن به سبد خرید
+                </button>
+            </a>
+        </div>
+        {% endif %}
+
+        {% if not user.is_authenticated %}
+
+        <p>برای نظر دادن ابتدا <a href="/user/login/">واردشوید</a></p>
 
 
-                <div id="information">
-                    <img src="{{post.product_img.url}}">
-                    <p>نام محصول: {{ post.product_name}}</p>
-                    <p>قیمت: {{ post.product_prize}}</p>
-                    <p>توضیحات: {{ post.product_des}}</p>
-                </div>
+        {% endif %}
 
-                {% if user.is_authenticated %}
-                <div id="add-basket-button">
-                    <a href="{% url 'product:change_item' operation='add' pk=post.pk %}">
-                        <button class="btn btn-primary" type="submit"> افزودن به سبد خرید
-                        </button>
-                    </a>
-                </div>
-                {% endif %}
-
-            {% if not user.is_authenticated %}
-
-                    <p>برای نظر دادن ابتدا <a href="/user/login/">واردشوید</a></p>
-
-
-            {% endif %}
-
-                    {% if user.is_authenticated %}
-                    <form method="POST">{% csrf_token %}
-                        <div class="form-group">
+        {% if user.is_authenticated %}
+        <form method="POST">{% csrf_token %}
+            <div class="form-group">
 
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="" style="">
     </textarea>
-                            <button type="submit" class="btn btn-default">ارسال نظر</button>
-</div>
-                    </form>
-                    {% endif %}
+                <button type="submit" class="btn btn-default">ارسال نظر</button>
+            </div>
+        </form>
+        {% endif %}
 
-                    {% for comments in post.comments.all %}
-                    {% if comments.is_parent and comments.is_public %}
+        {% for comments in post.comments.all %}
+        {% if comments.is_parent and comments.is_public %}
 
-                    <blockquote>
-                        <div id="comments">
+        <blockquote>
+            <div id="comments">
 
-                            <p> {{post.comments.all.count}} کامنت </p>
-                            {% if comments.user.userprofile.pro_img %}
-                            <img
-                                 src="{{ comments.user.userprofile.pro_img.url}}">
+                <p> {{post.comments.all.count}} کامنت </p>
+                {% if comments.user.userprofile.pro_img %}
+                <img
+                        src="{{ comments.user.userprofile.pro_img.url}}">
 
-                            {% else %}
-                            <img
-                                 src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
-                            {% endif %}
+                {% else %}
+                <img
+                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                {% endif %}
 
-                            <h4>{{ comments.user }}</h4>
-                            <br/>
-                            <br/>
-                            <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
-                            <div class="comment-body">
+                <h4>{{ comments.user }}</h4>
+                <br/>
+                <br/>
+                <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
+                <div class="comment-body">
 
-                                <p>{{ comments.body }}</p>
-                            </div>
-                            {% if user.is_authenticated %}
-                            <span></span>
-                            <button class="btn btn-default btn-sm">پاسخ دادن</button>
+                    <p>{{ comments.body }}</p>
+                </div>
+                {% if user.is_authenticated %}
+                <span></span>
+                <button class="btn btn-default btn-sm">پاسخ دادن</button>
 
-                            <form method="POST" style="display:none;">{% csrf_token %}
-                                <div class="form-group">
+                <form method="POST" style="display:none;">{% csrf_token %}
+                    <div class="form-group">
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
     </textarea></div>
-                                    <input type="hidden" name="parent_id" value="{{comments.pk}}">
-                                <button type="submit"  class="btn btn-default btn-sm" >فرستادن</button>
-                            </form>
+                    <input type="hidden" name="parent_id" value="{{comments.pk}}">
+                    <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
+                </form>
 
 
+                <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
+                <div id="see-replies">
+                    {% endif %}
 
-                            <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
-                            <div id="see-replies" >
-                                {% endif %}
-
-                                {% for children in comments.children %}
-                                {% with comments=comments.children %}
-                                {% endwith %}
+                    {% for children in comments.children %}
+                    {% with comments=comments.children %}
+                    {% endwith %}
 
 
-                                {%if children.is_public %}
+                    {%if children.is_public %}
 
-                                <blockquote>
-                                    {% if children.user.userprofile.pro_img %}
-                                    <img
-                                         src="{{ children.user.userprofile.pro_img.url}}">
+                    <blockquote>
+                        {% if children.user.userprofile.pro_img %}
+                        <img
+                                src="{{ children.user.userprofile.pro_img.url}}">
 
-                                    {% else %}
-                                    <img
-                                         src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
-                                    {% endif %}
-                                    <h4> {{ children.user }}</h4>
-                                    <br/>
-                            <br/>
-                                    <p>{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
-                                    <div class="comment-body">
-                                    <p>{{ children.body }}</p>
-                                    </div>
+                        {% else %}
+                        <img
+                                src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                        {% endif %}
+                        <h4> {{ children.user }}</h4>
+                        <br/>
+                        <br/>
+                        <p>{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}ارسال شده در:</p>
+                        <div class="comment-body">
+                            <p>{{ children.body }}</p>
+                        </div>
 
-                                    {% if user.is_authenticated %}
-                                    <span></span>
-                                    <button class="btn btn-default btn-sm">پاسخ دادن</button>
+                        {% if user.is_authenticated %}
+                        <span></span>
+                        <button class="btn btn-default btn-sm">پاسخ دادن</button>
 
-                                    <form method="POST" style="display:none;">{% csrf_token %}
-                                        <div class="form-group">
+                        <form method="POST" style="display:none;">{% csrf_token %}
+                            <div class="form-group">
         <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
     </textarea><input type="hidden" name="parent_id" value="{{comments.pk}}">
 
-                                            <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
-                                        </div>
-
-
-                                    </form>
-
-                                    {% endif %}
-                                    {% elif children.is_public and children.user == user %}
-                                    <hr>
-                                    <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                                    {% endif %}
-
-                                    {% endfor %}
-
-                                    <hr>
-                                </blockquote>
+                                <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
                             </div>
-                        </div>
 
+
+                        </form>
+
+                        {% endif %}
+                        {% elif children.is_public and children.user == user %}
+                        <hr>
+                        <p>نظر شما ثبت شده و منتظر تایید است.</p>
+                        {% endif %}
+
+                        {% endfor %}
+
+                        <hr>
                     </blockquote>
-                    {% elif not comments.is_public and comments.user == user %}
-                    <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                    {% endif %}
-                    {% endfor %}
+                </div>
+            </div>
+
+        </blockquote>
+        {% elif not comments.is_public and comments.user == user %}
+        <p>نظر شما ثبت شده و منتظر تایید است.</p>
+        {% endif %}
+        {% endfor %}
 
 
-
-        </div>
     </div>
+</div>
 
 <script>
 $(document).ready(function() {
@@ -173,6 +169,7 @@ $("#show-replies").click(function(event){
  $("textarea").before("<label>پیام</label>");
 
 });
+
 
 
 </script>
