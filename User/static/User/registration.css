@@ -1,6 +1,3 @@
-@media only screen and (max-width:577px){
-.registration input{
-
-width:100px;
-}
+.form-control{
+max-width:300px;
 }

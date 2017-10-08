@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="container">
+
     {% if not user.is_authenticate %}
 
     <h2>ثبت نام</h2>
@@ -70,5 +70,4 @@
     <a href="{% url 'user:view_profile' %}">حساب کاربری</a>
 {% endif %}
     {% endblock %}
-</div>
 </div>

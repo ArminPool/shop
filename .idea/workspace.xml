@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="pagination-panel moved to only posts.html">
+    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/login.html" afterPath="$PROJECT_DIR$/User/templates/User/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/static/User/registration.css" afterPath="$PROJECT_DIR$/User/static/User/registration.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User/templates/User/reg_form.html" afterPath="$PROJECT_DIR$/User/templates/User/reg_form.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="147" column="6" lean-forward="true" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="6" />
+            <state relative-caret-position="3822">
+              <caret line="147" column="6" lean-forward="false" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -29,7 +29,7 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="1404">
               <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
@@ -49,7 +49,7 @@
       <file leaf-file-name="post.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="416">
               <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
@@ -59,8 +59,8 @@
       <file leaf-file-name="details.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/details.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1115">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="1196">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,28 +69,28 @@
       <file leaf-file-name="registration.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User/static/User/registration.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="26">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User/templates/User/reg_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="43" />
+            <state relative-caret-position="364">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User/templates/User/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -99,7 +99,7 @@
       <file leaf-file-name="form.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/User/form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="1768">
               <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="25" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -111,7 +111,7 @@
       <file leaf-file-name="UsersContact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/UsersContact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="1040">
               <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="38" />
               <folding />
             </state>
@@ -140,7 +140,6 @@
         <option value="E:/Users/armin/AppData/Local/Programs/Python/Python36-32/Lib/tkinter/ttk.py" />
         <option value="$PROJECT_DIR$/User/templates/User/change_password.html" />
         <option value="$PROJECT_DIR$/User/static/User/change-password.css" />
-        <option value="$PROJECT_DIR$/User/static/User/registration.css" />
         <option value="$PROJECT_DIR$/User/static/User/edit-profile.css" />
         <option value="$PROJECT_DIR$/product/templates/product/results.html" />
         <option value="$PROJECT_DIR$/User/templates/User/profile.html" />
@@ -184,8 +183,9 @@
         <option value="$PROJECT_DIR$/product/static/product/post.css" />
         <option value="$PROJECT_DIR$/product/templates/product/posts.html" />
         <option value="$PROJECT_DIR$/product/templates/product/base.html" />
-        <option value="$PROJECT_DIR$/User/templates/User/reg_form.html" />
         <option value="$PROJECT_DIR$/User/templates/User/login.html" />
+        <option value="$PROJECT_DIR$/User/static/User/registration.css" />
+        <option value="$PROJECT_DIR$/User/templates/User/reg_form.html" />
       </list>
     </option>
   </component>
@@ -448,13 +448,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00071" summary="footer element padding changed">
-      <created>1507360000220</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1507360000220</updated>
     </task>
     <task id="LOCAL-00072" summary="hr deleted between right-side-footer">
       <created>1507360639230</created>
@@ -792,7 +785,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507437643679</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="login and form control inputs changed">
+      <created>1507438566099</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1507438566099</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,13 +802,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24094488" sideWeight="0.5263543" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63779527" sideWeight="0.4736457" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.48535872" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24936062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19212599" sideWeight="0.4795022" order="10" side_tool="false" content_ui="tabs" x="0" y="294" width="1366" height="140" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -882,7 +882,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="text area cols changed" />
     <MESSAGE value="footer element padding changed" />
     <MESSAGE value="hr deleted between right-side-footer" />
     <MESSAGE value="footer added and advertising edited" />
@@ -907,7 +906,8 @@
     <MESSAGE value="details footer moved edited" />
     <MESSAGE value="details footer fix test" />
     <MESSAGE value="pagination-panel moved to only posts.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination-panel moved to only posts.html" />
+    <MESSAGE value="login and form control inputs changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="login and form control inputs changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,7 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,16 +1172,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2222">
           <caret line="142" column="26" lean-forward="true" selection-start-line="142" selection-start-column="26" selection-end-line="142" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#blockquote#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#blockquote#0;n#div#1;n#div#0;n#blockquote#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="1404">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
@@ -1191,7 +1185,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
+        <state relative-caret-position="416">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
@@ -1199,16 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="147" column="6" lean-forward="true" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/static/product/details.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1115">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="3822">
+          <caret line="147" column="6" lean-forward="false" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1223,7 +1209,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="1768">
           <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="25" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -1233,32 +1219,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/UsersContact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="1040">
           <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/static/User/registration.css">
+    <entry file="file://$PROJECT_DIR$/product/static/product/details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/templates/User/reg_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="43" />
+        <state relative-caret-position="1196">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/User/templates/User/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/static/User/registration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/templates/User/reg_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
