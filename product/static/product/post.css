@@ -6,6 +6,15 @@ margin-left:1px;
 margin:0px;width:100%;
 height:100%;
 }
+.pagination-panel{
+border:none;
+margin-right:10px;
+margin-left:10px;
+}
+
+.pagination-panel .panel-default{
+border:none;
+}
 
 
 .product-line {
