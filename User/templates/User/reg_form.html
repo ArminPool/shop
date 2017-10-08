@@ -4,7 +4,9 @@
 {% block title %}
 <title>فرم ثبت نام</title>
 {% endblock %}
-
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'product/registration.css' %}"/>
+{% endblock %}
 {% block body %}
 
     {% if not user.is_authenticate %}
@@ -69,5 +71,6 @@
     <p>  شما قبلا ثبت نام شده اید .برای مشاهده حساب کاربری خود  بر روی لینک زیر کلیک کنید</p>
     <a href="{% url 'user:view_profile' %}">حساب کاربری</a>
 {% endif %}
-    {% endblock %}
+
 </div>
+ {% endblock %}
