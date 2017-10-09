@@ -1,5 +1,6 @@
 {% extends 'product/base.html' %}
 {% load jalali_tags %}
+ {% load custom_tags %}
 {% load staticfiles %}
 {% block style %}
 
@@ -112,7 +113,9 @@
                         <h4> {{ children.user }}</h4>
                         <br/>
                         <br/>
-                        <p>{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}ارسال شده در:</p>
+                        {% with created = children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' %}
+
+                        <p>ارسال شده در:{{ created|persian_numeric }}</p>
                         <div class="comment-body">
                             <p>{{ children.body }}</p>
                         </div>
