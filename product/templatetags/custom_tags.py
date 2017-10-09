@@ -3,7 +3,7 @@ register = template.Library()
 
 
 @register.filter(name='persian_numeric')
-def persian_numeric(value, arg):
+def persian_numeric(value):
 
     length = len(value)
     for char in value:
