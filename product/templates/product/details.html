@@ -113,9 +113,8 @@
                         <h4> {{ children.user }}</h4>
                         <br/>
                         <br/>
-                        {% children.created|to_jalali:'%y/%m/%d _ %H:%M:%S' %}
-{% endwith %}
-                        <p>ارسال شده در:{{ children.created|persian_numeric }}</p>
+
+                        <p>ارسال شده در:{{ children.created|to_jalali:'%y/%m/%d _ %H:%M:%S'|persian_numeric }}</p>
                         <div class="comment-body">
                             <p>{{ children.body }}</p>
                         </div>
