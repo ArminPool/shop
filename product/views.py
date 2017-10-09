@@ -1,11 +1,20 @@
 from django.shortcuts import render, redirect
 
 from django.views.generic import ListView
+import pytz
 
 from User.form import ContactForm, UsersContactForm
 from product.form import CommentForm
 from .models import Post, Basket, Comment
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+
+def set_timezone(request):
+    if request.method == 'POST':
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('/')
+    else:
+        return render(request, 'product/template.html', {'timezones': pytz.common_timezones})
 
 
 class Home(ListView):
