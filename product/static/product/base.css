@@ -10,8 +10,6 @@ body{
     font-family: IRANSans;
     resize: none;
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 
 
@@ -212,7 +210,14 @@ border-bottom:1px solid white;
 }
 }
 
+@media only screen and (max-width:750px){
 
+jumbotron{
+
+margin = 0px;
+}
+
+}
 
 
 
