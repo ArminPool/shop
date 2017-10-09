@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/details.html" afterPath="$PROJECT_DIR$/product/templates/product/details.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +70,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="75" column="43" lean-forward="false" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+            <state relative-caret-position="156">
+              <caret line="75" column="98" lean-forward="false" selection-start-line="75" selection-start-column="98" selection-end-line="75" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -478,13 +479,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00109" summary="margin added to button">
-      <created>1507382947118</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1507382947119</updated>
-    </task>
     <task id="LOCAL-00110" summary="review changed added">
       <created>1507383714832</created>
       <option name="number" value="00110" />
@@ -821,7 +815,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507531796491</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="play with filters">
+      <created>1507531808102</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1507531808103</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -911,7 +912,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="registrations.css changed" />
     <MESSAGE value="registrations.css changed also form field type" />
     <MESSAGE value="padding added to row inside panel-footer and submit button moved outside of registration form-group" />
     <MESSAGE value="none field errors added to registration and login fixed" />
@@ -936,7 +936,8 @@
     <MESSAGE value="with deleted" />
     <MESSAGE value="play with django filters" />
     <MESSAGE value="string filter added" />
-    <option name="LAST_COMMIT_MESSAGE" value="string filter added" />
+    <MESSAGE value="play with filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="play with filters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1287,8 +1288,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="75" column="43" lean-forward="false" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+        <state relative-caret-position="156">
+          <caret line="75" column="98" lean-forward="false" selection-start-line="75" selection-start-column="98" selection-end-line="75" selection-end-column="98" />
           <folding />
         </state>
       </provider>
