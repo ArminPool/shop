@@ -4,6 +4,7 @@
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/details.html" afterPath="$PROJECT_DIR$/product/templates/product/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templatetags/custom_tags.py" afterPath="$PROJECT_DIR$/product/templatetags/custom_tags.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,8 +59,8 @@
       <file leaf-file-name="custom_tags.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templatetags/custom_tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="184">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -68,8 +69,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="116" column="75" lean-forward="false" selection-start-line="116" selection-start-column="75" selection-end-line="116" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -172,8 +173,8 @@
         <option value="$PROJECT_DIR$/product/static/product/base.css" />
         <option value="$PROJECT_DIR$/product/templates/product/posts.html" />
         <option value="$PROJECT_DIR$/product/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/product/templatetags/custom_tags.py" />
         <option value="$PROJECT_DIR$/shop/settings.py" />
+        <option value="$PROJECT_DIR$/product/templatetags/custom_tags.py" />
         <option value="$PROJECT_DIR$/product/templates/product/details.html" />
       </list>
     </option>
@@ -476,13 +477,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00103" summary="text areas all fixed">
-      <created>1507380059064</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1507380059064</updated>
     </task>
     <task id="LOCAL-00104" summary="comment styles moved to css">
       <created>1507381018059</created>
@@ -820,7 +814,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507529836560</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="play with django filters">
+      <created>1507530052909</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1507530052909</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1266,14 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/templatetags/custom_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1282,10 +1275,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product/templatetags/custom_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="116" column="75" lean-forward="false" selection-start-line="116" selection-start-column="75" selection-end-line="116" selection-end-column="75" />
           <folding />
         </state>
       </provider>
