@@ -5,41 +5,41 @@ register = template.Library()
 @register.filter(name='persian_numeric')
 def persian_numeric(value, arg):
 
-    length = len(arg)
-    for char in arg:
+    length = len(value)
+    for char in value:
         if char is '0':
             char = '۰'
-            arg += char
+            value += char
         elif char is '1':
             char = '۱'
-            arg += char
+            value += char
         elif char is '2':
             char = '۲'
-            arg += char
+            value += char
         elif char is '3':
             char = '۳'
-            arg += char
+            value += char
         elif char is '4':
             char = '۴'
-            arg += char
+            value += char
         elif char is '5':
             char = '۵'
-            arg += char
+            value += char
         elif char is '6':
             char = '۶'
-            arg += char
+            value += char
         elif char is '7':
             char = '۷'
-            arg += char
+            value += char
         elif char is '8':
             char = '۸'
-            arg += char
+            value += char
         elif char is '9':
             char = '۹'
-            arg += char
+            value += char
         else:
-            arg += char
+            value += char
 
-    return arg[length:]
+    return value[length:]
 
 
