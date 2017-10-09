@@ -73,7 +73,7 @@
                 <br/>
                 <br/>
 
-                <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
+                <p>ارسال شده در:{{ comments.created|to_jalali:'%y/%m/%d _ %H:%M:%S' }}</p>
                 <div class="comment-body">
 
                     <p>{{ comments.body }}</p>
