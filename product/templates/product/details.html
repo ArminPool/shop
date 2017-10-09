@@ -115,7 +115,7 @@
                         <br/>
                         <br/>
 
-                        <p>ارسال شده در:{{ children.created|persian_numeric }}</p>
+                        <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
                         <div class="comment-body">
                             <p>{{ children.body }}</p>
                         </div>
