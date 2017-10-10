@@ -56,8 +56,9 @@
         {% for comments in post.comments.all %}
         {% if comments.is_parent and comments.is_public %}
 
-        <blockquote>
+
             <div id="comments">
+                <blockquote>
 
                 <p> {{post.comments.all.count}} کامنت </p>
                 {% if comments.user.userprofile.pro_img %}
@@ -146,9 +147,10 @@
                         <hr>
                     </blockquote>
                 </div>
+                      </blockquote>
             </div>
 
-        </blockquote>
+
         {% elif not comments.is_public and comments.user == user %}
         <p>نظر شما ثبت شده و منتظر تایید است.</p>
         {% endif %}
