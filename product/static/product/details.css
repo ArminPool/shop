@@ -17,7 +17,7 @@ border:1px solid #e5e5e5;
 .form-control{
 max-width:700px;
 }
-.comments img{
+.comments blockquote img{
 width:60px;
 height:60px;
 float:right;
