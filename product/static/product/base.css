@@ -164,6 +164,17 @@ float:right;
 color:white;
 
 }
+.panel-footer .row{
+padding-left:40px;
+padding-right:40px;
+}
+#footer-right-side {
+padding-right:0px;
+}
+#footer-right-side ul{
+padding-right:0px;
+}
+
 
 
 @media only screen and (max-width:516px){
@@ -181,13 +192,8 @@ float:none;
 
 }
 
-.panel-footer .row{
-padding-left:40px;
-padding-right:40px;
-}
-#footer-right-side{
-padding-right:0px;
-}
+
+
 
 
 #footer-right-side ul{
