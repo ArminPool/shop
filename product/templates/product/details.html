@@ -52,14 +52,11 @@
             </div>
         </form>
         {% endif %}
-<p> {{post.comments.all.count}} کامنت </p>
+        <p> {{post.comments.all.count}} کامنت </p>
         {% for comments in post.comments.all %}
         <div class="comments">
-<blockquote>
-        {% if comments.is_parent and comments.is_public %}
-
-
-
+            <blockquote>
+                {% if comments.is_parent and comments.is_public %}
 
 
                 {% if comments.user.userprofile.pro_img %}
@@ -94,7 +91,7 @@
                 {% endif %}
 
                 {% if comments.children %}
-                <button  class="show-replies btn btn-default btn-sm">نمایش پاسخ ها</button>
+                <button class="show-replies btn btn-default btn-sm">نمایش پاسخ ها</button>
                 <div class="see-replies">
 
 
@@ -102,68 +99,65 @@
                     {% with comments=comments.children %}
                     {% endwith %}
 
+                    <div class="children">
+                        <blockquote>
+                            {% if children.is_public %}
 
-                    {% if children.is_public %}
+                            {% if children.user.userprofile.pro_img %}
+                            <img
+                                    src="{{ children.user.userprofile.pro_img.url}}">
 
-                    <blockquote>
-                        {% if children.user.userprofile.pro_img %}
-                        <img
-                                src="{{ children.user.userprofile.pro_img.url}}">
+                            {% else %}
+                            <img
+                                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                            {% endif %}
+                            <h4> {{ children.user }}</h4>
+                            <br/>
+                            <br/>
 
-                        {% else %}
-                        <img
-                                src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
-                        {% endif %}
-                        <h4> {{ children.user }}</h4>
-                        <br/>
-                        <br/>
+                            <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
+                            <div class="comment-body">
+                                <p>{{ children.body }}</p>
+                            </div>
 
-                        <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
-                        <div class="comment-body">
-                            <p>{{ children.body }}</p>
-                        </div>
+                            {% if user.is_authenticated %}
+                            <span></span>
+                            <button class="btn btn-default btn-sm">پاسخ دادن</button>
 
-                        {% if user.is_authenticated %}
-                        <span></span>
-                        <button class="btn btn-default btn-sm">پاسخ دادن</button>
-
-                        <form method="POST" style="display:none;">{% csrf_token %}
-                            <div class="form-group">
+                            <form method="POST" style="display:none;">{% csrf_token %}
+                                <div class="form-group">
                             <textarea class="form-control" name="body" rows="4" maxlength="250" required="">
                                 </textarea><input type="hidden" name="parent_id" value="{{comments.pk}}">
 
-                                <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
-                            </div>
+                                    <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
+                                </div>
 
 
-                        </form>
-                        {% endif %}
+                            </form>
+                            {% endif %}
 
 
-                        {% elif children.is_public and children.user == user %}
-                        <hr>
-                        <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
+                            {% elif children.is_public and children.user == user %}
 
-                </blockquote>
-
-
-
-
+                            <p>نظر شما ثبت شده و منتظر تایید است.</p>
+                            {% endif %}
+                        </blockquote>
+                    </div>
+                    {% endfor %}
                 </div>
+                {% endif %}
+
+
                 {% elif comments.is_public and comments.user == user %}
-            <p>نظر شما ثبت شده و منتظر تایید است.</p>
+                <p>نظر شما ثبت شده و منتظر تایید است.</p>
 
 
+                {% endif %}
+            </blockquote>
 
-        {% endif %}
-    </blockquote>
 
-
- </div>
-                        {% endfor %}
+        </div>
+        {% endfor %}
 
     </div>
 </div>
@@ -182,6 +176,8 @@ $(".show-replies").click(function(event){
  $("textarea").before("<label>پیام</label>");
 
 });
+
+
 
 
 
