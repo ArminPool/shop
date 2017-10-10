@@ -185,6 +185,10 @@ float:none;
 padding-left:40px;
 padding-right:40px;
 }
+#footer-right-side{
+padding-right:0px;
+}
+
 
 #footer-right-side ul{
 padding-right:0px;
