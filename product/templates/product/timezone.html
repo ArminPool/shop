@@ -4,7 +4,7 @@
 {% block body %}
 <h2>منطقه زمانی خود را انتخاب کنید </h2>
 {% get_current_timezone as TIME_ZONE %}
-<form action="{% url 'set_timezone' %}" method="POST">
+<form action="{% url 'timezone' %}" method="POST">
     {% csrf_token %}
     <label for="timezone">Time zone:</label>
     <select name="timezone">

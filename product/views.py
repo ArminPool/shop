@@ -22,7 +22,7 @@ class Home(ListView):
     model = Post
     template_name = 'product/posts.html'
     context_object_name = 'posts'
-    # For pagination more detail www.simplebetterthancomplex.com
+    #  pagination more detail www.simplebetterthancomplex.com
     paginate_by = 6
     queryset = Post.objects.all()
 
