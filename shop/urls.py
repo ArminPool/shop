@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^contact/$', contact, name='Contact'),
     url(r'^about-us/$', about_us, name='about-us'),
     url(r'^advertising/$', advertising, name='advertising'),
-    url(r'^time-zone/$', set_timezone, name='set_timezone'),
+    url(r'^timezone/$', set_timezone, name='timezone'),
 
 ]
 urlpatterns += staticfiles_urlpatterns()

@@ -1,5 +1,5 @@
 {% extends 'product/base.html' %}
-
+{% load tz %}
 {% load staticfiles %}
 
 
@@ -33,7 +33,9 @@
 <p>شهر: {{ user.userprofile.city }}</p>
 <p>شماره تلفن: {{ user.userprofile.phone_number }}</p>
 <p>سایت: {{ user.userprofile.website }}</p>
-
+<p>
+    {{ get_current_timezone as }}
+</p>
 سبد خرید:
 
 {% for item in items %}

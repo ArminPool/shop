@@ -1,5 +1,4 @@
 {% extends 'product/base.html' %}
-{% load tz %}
 {% load jalali_tags %}
  {% load custom_tags %}
 {% load staticfiles %}
@@ -74,9 +73,7 @@
                 <br/>
                 <br/>
 
-
-
-                <p>ارسال شده در:{{ comments.created|localtime }}</p>
+                <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
                 <div class="comment-body">
 
                     <p>{{ comments.body }}</p>

@@ -14,7 +14,7 @@ def set_timezone(request):
         request.session['django_timezone'] = request.POST['timezone']
         return redirect('/')
     else:
-        return render(request, 'product/template.html', {'timezones': pytz.common_timezones})
+        return render(request, 'product/timezone.html', {'timezones': pytz.common_timezones})
 
 
 class Home(ListView):
