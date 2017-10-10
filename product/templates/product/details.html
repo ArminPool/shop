@@ -165,7 +165,7 @@
                 {% endif %}
 
 
-                {% elif not comments.is_public and comments.user == user %}
+                {% elif not comments.is_public and comments.user == user and not comments.is_parent %}
 
                 {% if comments.user.userprofile.pro_img %}
                 <img
