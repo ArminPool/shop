@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/User/templates/User/profile.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -537,13 +537,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00131" summary="form2 none field edit and form 1 too.login css added reg form email field fixed">
-      <created>1507479532659</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1507479532663</updated>
-    </task>
     <task id="LOCAL-00132" summary="loadstaticfiles added to login and i used not rather than None in  form 1 clean">
       <created>1507479860418</created>
       <option name="number" value="00132" />
@@ -880,7 +873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507616268119</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="profile edited">
+      <created>1507616397912</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1507616397912</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1359,7 +1359,7 @@
     <entry file="file://$PROJECT_DIR$/User/templates/User/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>
