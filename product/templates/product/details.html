@@ -54,11 +54,12 @@
         {% endif %}
 
         {% for comments in post.comments.all %}
+        <div class="comments">
+<blockquote>
         {% if comments.is_parent and comments.is_public %}
 
 
-<div class="comments">
-<blockquote>
+
 
                 <p> {{post.comments.all.count}} کامنت </p>
                 {% if comments.user.userprofile.pro_img %}
@@ -156,11 +157,12 @@
             <p>نظر شما ثبت شده و منتظر تایید است.</p>
 
 
-</blockquote>
+
+        {% endif %}
+    </blockquote>
 
 
  </div>
-        {% endif %}
                         {% endfor %}
 
     </div>
@@ -175,7 +177,7 @@ $(".comments span + button").click(function(event){
 
 $(".show-replies").click(function(event){
     event.preventDefault();
-    $("#see-replies").fadeToggle();
+    $(".see-replies").fadeToggle();
 });
  $("textarea").before("<label>پیام</label>");
 
