@@ -1,5 +1,6 @@
-{% load tz %}
 {% extends 'product/base.html' %}
+
+{% load tz %}
 {% block body %}
 {% get_current_timezone as TIME_ZONE %}
 <form action="{% url 'set_timezone' %}" method="POST">

@@ -86,8 +86,8 @@
       <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="26">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -463,13 +463,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00123" summary="container added to reg-form again">
-      <created>1507470798476</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1507470798477</updated>
-    </task>
     <task id="LOCAL-00124" summary="registrations.css changed">
       <created>1507471116052</created>
       <option name="number" value="00124" />
@@ -806,7 +799,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507612972321</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="template edited">
+      <created>1507613059992</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1507613059992</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -896,7 +896,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="form2 none field added and form 1 none field errors edited" />
     <MESSAGE value="form2 none field edit and form 1 too.login css added reg form email field fixed" />
     <MESSAGE value="loadstaticfiles added to login and i used not rather than None in  form 1 clean" />
     <MESSAGE value="margin added to last elements inside this files" />
@@ -921,7 +920,8 @@
     <MESSAGE value="comment date field model changed" />
     <MESSAGE value="timezone check1" />
     <MESSAGE value="timezone url edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="timezone url edited" />
+    <MESSAGE value="template edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="template edited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,8 +1274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="26">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
