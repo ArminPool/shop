@@ -44,7 +44,7 @@ def register(request):
             form1 = RegistrationForm(request.POST)
             form2 = ProfileForm(request.POST)
 
-            args = {'form1': form1, 'form2': form2,}
+            args = {'form1': form1, 'form2': form2, }
             return render(request, 'User/reg_form.html', args)
     else:
         form1 = RegistrationForm()
@@ -60,12 +60,13 @@ def view_profile(request):
     try:
         item = Basket.objects.get(current_user=request.user)
         items = item.product_name.all()
-        args = {'user': request.user, 'items': items, 'users': users, 'all_posts': all_posts,'timezones': pytz.common_timezones}
+        args = {'user': request.user, 'items': items, 'users': users, 'all_posts': all_posts,
+                'timezones': pytz.common_timezones}
         return render(request, 'User/profile.html', args)
 
     except:
 
-        args = {'user': request.user, 'users': users, 'all_posts': all_posts,'timezones': pytz.common_timezones}
+        args = {'user': request.user, 'users': users, 'all_posts': all_posts, 'timezones': pytz.common_timezones}
         return render(request, 'User/profile.html', args)
 
 
@@ -83,11 +84,11 @@ def edit_profile(request):
 
         else:
 
-            args = {'form': form,'timezones': pytz.common_timezones }
+            args = {'form': form, 'timezones': pytz.common_timezones}
             return render(request, 'User/edit_profile.html', args)
     else:
         form = ProfileForm(instance=request.user.userprofile)
-        args = {'form': form}
+        args = {'form': form, 'timezones': pytz.common_timezones}
         return render(request, 'User/edit_profile.html', args)
 
 
