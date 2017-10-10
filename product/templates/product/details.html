@@ -93,8 +93,8 @@
                 {% endif %}
 
                 {% if comments.children %}
-                <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
-                <div id="see-replies">
+                <button  class="show-replies btn btn-default btn-sm">نمایش پاسخ ها</button>
+                <div class="see-replies">
 
 
                     {% for children in comments.children %}
@@ -146,10 +146,10 @@
                         {% endfor %}
                         {% endif %}
 
-
+                </blockquote>
 
                         <hr>
-                    </blockquote>
+
 
                 </div>
                 {% elif comments.is_public and comments.user == user %}
@@ -168,12 +168,12 @@
 
 <script>
 $(document).ready(function() {
-$("#comments span + button").click(function(event){
+$(".comments span + button").click(function(event){
     event.preventDefault();
     $(this).nextAll('form').first().fadeToggle();
 });
 
-$("#show-replies").click(function(event){
+$(".show-replies").click(function(event){
     event.preventDefault();
     $("#see-replies").fadeToggle();
 });
