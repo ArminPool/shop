@@ -78,8 +78,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="546">
+              <caret line="153" column="15" lean-forward="true" selection-start-line="153" selection-start-column="15" selection-end-line="153" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -539,13 +539,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00149" summary="with deleted">
-      <created>1507529479177</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1507529479177</updated>
-    </task>
     <task id="LOCAL-00150" summary="with deleted">
       <created>1507529820392</created>
       <option name="number" value="00150" />
@@ -882,7 +875,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507621780532</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="show replies button ro taghir dadam bara faghat baravaghti ke pasokhi dar kar bashe">
+      <created>1507622278613</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1507622278613</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -972,8 +972,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="play with filters" />
-    <MESSAGE value="USER_TZ false" />
     <MESSAGE value="play with filter" />
     <MESSAGE value="comment date field model changed" />
     <MESSAGE value="timezone check1" />
@@ -997,7 +995,9 @@
     <MESSAGE value="blockquote moved" />
     <MESSAGE value="debug true" />
     <MESSAGE value="auto now added to created field" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto now added to created field" />
+    <MESSAGE value="show replies button ro taghir dadam bara faghat baravaghti ke pasokhi dar kar bashe" />
+    <MESSAGE value="end if moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="end if moved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,8 +1365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="153" column="15" lean-forward="true" selection-start-line="153" selection-start-column="15" selection-end-line="153" selection-end-column="15" />
           <folding />
         </state>
       </provider>

@@ -90,11 +90,12 @@
                     <input type="hidden" name="parent_id" value="{{comments.pk}}">
                     <button type="submit" class="btn btn-default btn-sm">فرستادن</button>
                 </form>
+                    {% endif %}
 
 {% if comments.children %}
                 <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
                 <div id="see-replies">
-                    {% endif %}
+
 
                     {% for children in comments.children %}
                     {% with comments=comments.children %}
