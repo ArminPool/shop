@@ -5,7 +5,7 @@
 -------------------
 */
 body{
-    background-image : url("./background.png");
+    background-image : url("./background.jpg");
     min-width:400px;
     font-family: IRANSans;
     resize: none;
@@ -166,10 +166,10 @@ color:white;
 padding-left:40px;
 padding-right:40px;
 }
-#footer-copy-right ul{
+#footer-right-side ul{
 padding-right:15px;
-
 }
+
 
 @media only screen and (max-width:516px){
 
