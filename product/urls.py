@@ -13,6 +13,6 @@ urlpatterns = [
     url(r'^detail/(?P<pk>\d+)/$', detail, name='detail'),
     url(r'^product/(?P<product_category>.+)/$', category, name='category'),
     #   url(r'^comment/add/(?P<pk>\d+)/$', views.add_comment_to_post, name='add_comment_to_post'),
-    url(r'set/time/zone^$', set_timezone, name='set_timezone'),
+    url(r'^set/time/zone^$', set_timezone, name='set_timezone'),
 
 ]
