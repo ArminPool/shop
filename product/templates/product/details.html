@@ -137,7 +137,24 @@
                             {% endif %}
 
 
-                            {% elif children.is_public and children.user == user %}
+                            {% elif not children.is_public and children.user == user %}
+
+                            {% if children.user.userprofile.pro_img %}
+                            <img
+                                    src="{{ children.user.userprofile.pro_img.url}}">
+
+                            {% else %}
+                            <img
+                                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                            {% endif %}
+                            <h4> {{ children.user }}</h4>
+                            <br/>
+                            <br/>
+
+                            <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
+                            <div class="comment-body">
+                                <p>{{ children.body }}</p>
+                            </div>
 
                             <p>نظر شما ثبت شده و منتظر تایید است.</p>
                             {% endif %}
@@ -148,7 +165,26 @@
                 {% endif %}
 
 
-                {% elif comments.is_public and comments.user == user %}
+                {% elif not comments.is_public and comments.user == user %}
+
+                {% if comments.user.userprofile.pro_img %}
+                <img
+                        src="{{ comments.user.userprofile.pro_img.url}}">
+
+                {% else %}
+                <img
+                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                {% endif %}
+
+                <h4>{{ comments.user }}</h4>
+                <br/>
+                <br/>
+
+                <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
+                <div class="comment-body">
+
+                    <p>{{ comments.body }}</p>
+                </div>
                 <p>نظر شما ثبت شده و منتظر تایید است.</p>
 
 
