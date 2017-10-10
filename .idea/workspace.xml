@@ -78,8 +78,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="153" column="12" lean-forward="false" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+            <state relative-caret-position="89">
+              <caret line="97" column="28" lean-forward="false" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -539,13 +539,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00155" summary="play with django filters">
-      <created>1507530584210</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1507530584210</updated>
-    </task>
     <task id="LOCAL-00156" summary="string filter added">
       <created>1507531678116</created>
       <option name="number" value="00156" />
@@ -882,7 +875,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507624566795</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="blockquote moved">
+      <created>1507624901970</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1507624901970</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -988,7 +988,6 @@
     <MESSAGE value="front end :bace footer right side padding changed" />
     <MESSAGE value="front end :bace footer right side padding changed and background-image fixed" />
     <MESSAGE value="debug false" />
-    <MESSAGE value="blockquote moved" />
     <MESSAGE value="debug true" />
     <MESSAGE value="auto now added to created field" />
     <MESSAGE value="show replies button ro taghir dadam bara faghat baravaghti ke pasokhi dar kar bashe" />
@@ -997,7 +996,8 @@
     <MESSAGE value="edit" />
     <MESSAGE value="end for and endif position changed" />
     <MESSAGE value="endfor added" />
-    <option name="LAST_COMMIT_MESSAGE" value="endfor added" />
+    <MESSAGE value="blockquote moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="blockquote moved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,8 +1365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="153" column="12" lean-forward="false" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+        <state relative-caret-position="89">
+          <caret line="97" column="28" lean-forward="false" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
           <folding />
         </state>
       </provider>

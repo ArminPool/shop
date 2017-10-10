@@ -93,8 +93,10 @@
                 {% endif %}
 
                 {% if comments.children %}
-                <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
-                <div id="see-replies">
+
+            <button id="show-replies" class="btn btn-default btn-sm">نمایش پاسخ ها</button>
+                <blockquote>
+            <div id="see-replies">
 
 
                     {% for children in comments.children %}
@@ -104,7 +106,7 @@
 
                     {% if children.is_public %}
 
-                    <blockquote>
+
                         {% if children.user.userprofile.pro_img %}
                         <img
                                 src="{{ children.user.userprofile.pro_img.url}}">
@@ -149,9 +151,10 @@
 
 
                         <hr>
-                    </blockquote>
+
 
                 </div>
+             </blockquote>
                 {% elif comments.is_public and comments.user == user %}
                         {% endif %}
                         {% endfor %}
