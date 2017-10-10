@@ -8,8 +8,8 @@
 
 <!-- The block below overwrites block in base -->
 {% block title %}
-    <title>profile</title>
-    {% endblock %}
+<title>profile</title>
+{% endblock %}
 
 {% block profile  %}
 
@@ -33,8 +33,10 @@
 <p>شهر: {{ user.userprofile.city }}</p>
 <p>شماره تلفن: {{ user.userprofile.phone_number }}</p>
 <p>سایت: {{ user.userprofile.website }}</p>
+{% for tz in timezones %}
+{% if tz == TIME_ZONE %}
 <p>
-{{ timezones }}
+    {{ tz }} منطقه زمانی:
 </p>
 سبد خرید:
 
@@ -44,7 +46,7 @@
 <a href="{% url 'product:change_item' operation='remove' pk=item.pk %}">
     <button class="btn btn-danger" type="submit"> حذف از سبد خرید</button>
 </a>
- {% empty %}
+{% empty %}
 <p>سبد شما خالی است</p>
 
 {% endfor %}

@@ -74,15 +74,16 @@ def view_profile(request):
 def edit_profile(request):
     if request.method == 'POST':
         form = ProfileForm(request.POST, request.FILES, instance=request.user.userprofile)
+
         if form.is_valid():
             print("success")
             form.save()
+            request.session['django_timezone'] = request.POST['timezone']
             return redirect('/user/profile')
 
         else:
 
-            form = ProfileForm(instance=request.user.userprofile)
-            args = {'form': form, }
+            args = {'form': form,'timezones': pytz.common_timezones }
             return render(request, 'User/edit_profile.html', args)
     else:
         form = ProfileForm(instance=request.user.userprofile)

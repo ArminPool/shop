@@ -1,5 +1,6 @@
 {% extends 'product/base.html' %}
 {% load staticfiles %}
+{% load tz %}
 <!-- The block below overwrites block in base -->
 {% block head %}
 <title>Profile</title>
@@ -74,6 +75,16 @@
 
                     <input type="submit" value="تایید">
                 </td>
+
+            </tr>
+            <tr>
+                {% get_current_timezone as TIME_ZONE %}
+                <td><label for="timezone">منطقه زمانی:</label>
+    <select name="timezone">
+        {% for tz in timezones %}
+        <option value="{{ tz }}" {% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>
+        {% endfor %}
+    </select></td>
             </tr>
         </table>
               </div>
