@@ -52,12 +52,12 @@
             </div>
         </form>
         {% endif %}
-<div class="comments">
+
         {% for comments in post.comments.all %}
         {% if comments.is_parent and comments.is_public %}
 
 
-
+<div class="comments">
 <blockquote>
 
                 <p> {{post.comments.all.count}} کامنت </p>
@@ -159,10 +159,10 @@
 </blockquote>
 
 
-
+ </div>
         {% endif %}
                         {% endfor %}
-    </div>
+
     </div>
 </div>
 
