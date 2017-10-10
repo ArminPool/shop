@@ -136,9 +136,9 @@
                             </form>
                             {% endif %}
 
+                        <div class="children-not-public" {% if not children.is_public and not children.user == user %} style="display:none;"{% endif %}>
 
                             {% elif not children.is_public and children.user == user %}
-                        <div class="children-not-public" {% if not children.is_public and not children.user == user %} style="display:none;"{% endif %}>
                             {% if children.user.userprofile.pro_img %}
                             <img
                                     src="{{ children.user.userprofile.pro_img.url}}">
@@ -157,17 +157,19 @@
                             </div>
 
                             <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                        </div>
+
                             {% endif %}
+                            </div>
                         </blockquote>
                     </div>
                     {% endfor %}
                 </div>
                 {% endif %}
 
+<div class="comments-not-public" {% if not children.is_public and not children.user == user %} style="display:none;"{% endif %}>
 
                 {% elif not comments.is_public and comments.user == user and comments.is_parent %}
-<div class="comments-not-public">
+
                 {% if comments.user.userprofile.pro_img %}
                 <img
                         src="{{ comments.user.userprofile.pro_img.url}}">
@@ -188,8 +190,9 @@
                 </div>
                 <p>نظر شما ثبت شده و منتظر تایید است.</p>
 
-</div>
+
                 {% endif %}
+    </div>
             </blockquote>
 
 
