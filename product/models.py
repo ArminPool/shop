@@ -51,7 +51,7 @@ class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments')
     user = models.ForeignKey(User, null=True)
     body = models.TextField(max_length=250, null=True)
-    created = models.DateTimeField()
+    created = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
     parent = models.ForeignKey("self", null=True, blank=True)
     public = models.BooleanField(default=False)
