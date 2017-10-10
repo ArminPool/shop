@@ -166,7 +166,7 @@
                 </div>
                 {% endif %}
 
-<div class="comments-not-public" {% if not children.is_public and not children.user == user %} style="display:none;"{% endif %}>
+<div class="comments-not-public" {% if not comments.is_public and not comments.user == user %} style="display:none;"{% endif %}>
 
                 {% elif not comments.is_public and comments.user == user and comments.is_parent %}
 
