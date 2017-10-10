@@ -78,8 +78,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="159" column="12" lean-forward="false" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
+            <state relative-caret-position="284">
+              <caret line="164" column="10" lean-forward="true" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -539,13 +539,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00157" summary="string filter added">
-      <created>1507531796491</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1507531796491</updated>
-    </task>
     <task id="LOCAL-00158" summary="play with filters">
       <created>1507531808102</created>
       <option name="number" value="00158" />
@@ -882,7 +875,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507625066187</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="last endfor and end if moved">
+      <created>1507625268465</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1507625268465</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -972,7 +972,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="template edited" />
     <MESSAGE value="local timezone check" />
     <MESSAGE value="settngs.TIMEZONE changed to Asia/Tehran and details comment(created) edited and some change to timezone.html" />
     <MESSAGE value="settngs.TIMEZONE changed to Asia/Tehran and details comment(created) edited and some change to timezone.html and template.html changed to timezone.html" />
@@ -997,7 +996,8 @@
     <MESSAGE value="end for and endif position changed" />
     <MESSAGE value="endfor added" />
     <MESSAGE value="blockquote moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="blockquote moved" />
+    <MESSAGE value="last endfor and end if moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="last endfor and end if moved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,8 +1365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="159" column="12" lean-forward="false" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
+        <state relative-caret-position="284">
+          <caret line="164" column="10" lean-forward="true" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
           <folding />
         </state>
       </provider>
