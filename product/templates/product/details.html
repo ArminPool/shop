@@ -102,7 +102,7 @@
                     {% endwith %}
 
 
-                    {%if children.is_public %}
+                    {% if children.is_public %}
 
                     <blockquote>
                         {% if children.user.userprofile.pro_img %}
@@ -150,10 +150,7 @@
                     </blockquote>
                 </div>
                       </blockquote>
-                {% elif not comments.is_public and comments.user == user %}
-        <p>نظر شما ثبت شده و منتظر تایید است.</p>
-        {% endif %}
-        {% endfor %}
+
             </div>
 
 
