@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
 
-from product.views import contact,about_us,advertising
+from product.views import contact,about_us,advertising,set_timezone
 from shop import settings
 
 urlpatterns = [
@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^contact/$', contact, name='Contact'),
     url(r'^about-us/$', about_us, name='about-us'),
     url(r'^advertising/$', advertising, name='advertising'),
-
+    url(r'^time-zone^$', set_timezone, name='set_timezone'),
 
 ]
 urlpatterns += staticfiles_urlpatterns()
