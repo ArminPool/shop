@@ -52,7 +52,7 @@
             </div>
         </form>
         {% endif %}
-
+<p> {{post.comments.all.count}} کامنت </p>
         {% for comments in post.comments.all %}
         <div class="comments">
 <blockquote>
@@ -61,7 +61,7 @@
 
 
 
-                <p> {{post.comments.all.count}} کامنت </p>
+
                 {% if comments.user.userprofile.pro_img %}
                 <img
                         src="{{ comments.user.userprofile.pro_img.url}}">
@@ -149,7 +149,7 @@
 
                 </blockquote>
 
-                        <hr>
+
 
 
                 </div>
