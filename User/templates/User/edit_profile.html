@@ -73,7 +73,7 @@
                     انتخاب عکس:
                     <input id="id_pro_img" name="pro_img" type="file">
 
-                    <input type="submit" value="تایید">
+
                 </td>
 
             </tr>
@@ -84,8 +84,12 @@
         {% for tz in timezones %}
         <option value="{{ tz }}" {% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>
         {% endfor %}
-    </select></td>
+    </select>
+                </td>
             </tr>
+            <tr><td>
+                <input type="submit" value="تایید">
+            </td></tr>
         </table>
               </div>
     </form>

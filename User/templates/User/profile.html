@@ -1,7 +1,7 @@
 {% extends 'product/base.html' %}
 {% load tz %}
 {% load staticfiles %}
-{% get_current_timezone as TIME_ZONE %}
+
 
 
 {% block style %}
@@ -34,6 +34,7 @@
 <p>شهر: {{ user.userprofile.city }}</p>
 <p>شماره تلفن: {{ user.userprofile.phone_number }}</p>
 <p>سایت: {{ user.userprofile.website }}</p>
+{% get_current_timezone as TIME_ZONE %}
 {% for tz in timezones %}
 {% if tz == TIME_ZONE %}
 <p>
