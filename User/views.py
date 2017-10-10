@@ -1,3 +1,4 @@
+import pytz
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.urls import reverse
@@ -59,12 +60,12 @@ def view_profile(request):
     try:
         item = Basket.objects.get(current_user=request.user)
         items = item.product_name.all()
-        args = {'user': request.user, 'items': items, 'users': users, 'all_posts': all_posts}
+        args = {'user': request.user, 'items': items, 'users': users, 'all_posts': all_posts,'timezones': pytz.common_timezones}
         return render(request, 'User/profile.html', args)
 
     except:
 
-        args = {'user': request.user, 'users': users, 'all_posts': all_posts}
+        args = {'user': request.user, 'users': users, 'all_posts': all_posts,'timezones': pytz.common_timezones}
         return render(request, 'User/profile.html', args)
 
 
