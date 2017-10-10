@@ -131,8 +131,6 @@ float:right;
 
 }
 
-
-
 #footer-right-side a{
 color:white;
 text-decoration:none;
@@ -168,13 +166,6 @@ color:white;
 padding-left:40px;
 padding-right:40px;
 }
-#footer-right-side {
-padding-right:0px;
-}
-#footer-right-side ul{
-padding-right:0px;
-}
-
 
 
 @media only screen and (max-width:516px){
@@ -220,12 +211,7 @@ border-bottom:1px solid white;
 }
 
 
-@media only screen and (max-width:750px){
 
-jumbotron{
-
-margin = 0px;
-}
 
 }
 
