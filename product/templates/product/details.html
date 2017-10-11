@@ -137,27 +137,27 @@
                             {% endif %}
 
 
-                            {% elif not children.is_public and children.user == user %}
-                        <div class="children-not-public">
-                            {% if children.user.userprofile.pro_img %}
-                            <img
-                                    src="{{ children.user.userprofile.pro_img.url}}">
+                            {% elif not children.is_public and children.user == user and children.is_parent %}
+                            <div class="children-not-public">
+                                {% if children.user.userprofile.pro_img %}
+                                <img
+                                        src="{{ children.user.userprofile.pro_img.url}}">
 
-                            {% else %}
-                            <img
-                                    src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
-                            {% endif %}
-                            <h4> {{ children.user }}</h4>
-                            <br/>
-                            <br/>
+                                {% else %}
+                                <img
+                                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                                {% endif %}
+                                <h4> {{ children.user }}</h4>
+                                <br/>
+                                <br/>
 
-                            <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
-                            <div class="comment-body">
-                                <p>{{ children.body }}</p>
+                                <p>ارسال شده در:{{ children.created|to_jalali|persian_numeric }}</p>
+                                <div class="comment-body">
+                                    <p>{{ children.body }}</p>
+                                </div>
+
+                                <p>نظر شما ثبت شده و منتظر تایید است.</p>
                             </div>
-
-                            <p>نظر شما ثبت شده و منتظر تایید است.</p>
-                        </div>
                             {% endif %}
                         </blockquote>
                     </div>
@@ -167,28 +167,28 @@
 
 
                 {% elif not comments.is_public and comments.user == user and comments.is_parent %}
-<div class="comments-not-public">
-                {% if comments.user.userprofile.pro_img %}
-                <img
-                        src="{{ comments.user.userprofile.pro_img.url}}">
+                <div class="comments-not-public">
+                    {% if comments.user.userprofile.pro_img %}
+                    <img
+                            src="{{ comments.user.userprofile.pro_img.url}}">
 
-                {% else %}
-                <img
-                        src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
-                {% endif %}
+                    {% else %}
+                    <img
+                            src="http://arminyahya.pythonanywhere.com/media/uploaded/default_img_prof.jpg">
+                    {% endif %}
 
-                <h4>{{ comments.user }}</h4>
-                <br/>
-                <br/>
+                    <h4>{{ comments.user }}</h4>
+                    <br/>
+                    <br/>
 
-                <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
-                <div class="comment-body">
+                    <p>ارسال شده در:{{ comments.created|to_jalali|persian_numeric }}</p>
+                    <div class="comment-body">
 
-                    <p>{{ comments.body }}</p>
+                        <p>{{ comments.body }}</p>
+                    </div>
+                    <p>نظر شما ثبت شده و منتظر تایید است.</p>
+
                 </div>
-                <p>نظر شما ثبت شده و منتظر تایید است.</p>
-
-</div>
                 {% endif %}
             </blockquote>
 
@@ -213,6 +213,7 @@ $(".show-replies").click(function(event){
  $("textarea").before("<label>پیام</label>");
 
 });
+
 
 
 
