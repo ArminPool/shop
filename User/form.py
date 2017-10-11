@@ -50,7 +50,7 @@ class RegistrationForm(UserCreationForm):
 
                 if len(password1) < 8:
                     print("less than 8")
-                    self.add_error('password1', 'تعداد حروف باید بیشتر از 8 باشد.')
+                    self.add_error('password1', 'تعداد  حروف رمز باید بیشتر از 8 باشد.')
 
                 elif password2 != password1:
                     print("dismatch")
