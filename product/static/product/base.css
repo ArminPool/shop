@@ -38,6 +38,12 @@ text-decoration:none;
 
 }
 
+.gr_ver_2{
+position:relative;
+top:0
+}
+
+
 .container .jumbotron {
     padding-top: 15px;
     padding-right: 10px;
