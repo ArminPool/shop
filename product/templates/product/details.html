@@ -212,6 +212,8 @@ $(".show-replies").click(function(event){
 });
  $("textarea").before("<label>پیام</label>");
 
+
+$('blockquote').filter(function(){return $(this).text().trim().length==0}).remove();
 });
 
 </script>
