@@ -2,24 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/IconsetSmiles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/IconsetSmiles_1x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/IconsetW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/IconsetW_1x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/emoji_spritesheet_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/emoji_spritesheet_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/emoji_spritesheet_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/emoji_spritesheet_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/img/emoji_spritesheet_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/css/emoji.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/css/emoji.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/js/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/js/emoji-picker.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/js/emoji-picker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/js/emoji-picker.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/js/jquery.emojiarea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/product/static/product/js/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/base.html" afterPath="$PROJECT_DIR$/product/templates/product/base.html" />
     </list>
@@ -36,8 +18,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="208" column="15" lean-forward="false" selection-start-line="208" selection-start-column="15" selection-end-line="208" selection-end-column="15" />
+            <state relative-caret-position="174">
+              <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -459,13 +441,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00187" summary="view and template edited">
-      <created>1507618976228</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1507618976228</updated>
-    </task>
     <task id="LOCAL-00188" summary="profile tz changed">
       <created>1507619073235</created>
       <option name="number" value="00188" />
@@ -802,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507706901204</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="css js jq file added for emoji">
+      <created>1507708230414</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1507708230414</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -926,13 +908,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/product/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -1257,10 +1232,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/emoji-picker-master/emoji-picker-master/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="208" column="15" lean-forward="false" selection-start-line="208" selection-start-column="15" selection-end-line="208" selection-end-column="15" />
+        <state relative-caret-position="174">
+          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
           <folding />
         </state>
       </provider>
