@@ -34,7 +34,7 @@ class RegistrationForm(UserCreationForm):
         password1 = cleaned_data.get('password1')
         password2 = cleaned_data.get('password2')
         try:
-            if not username or not email or not password1 or not password2 or not first_name or not last_name :
+            if not username or not email or not first_name or not last_name:
                 print("Nothing entered")
                 self.add_error(None, 'لطفا تمام  فیلد ها را پر کنید!')
             elif User.objects.get(username=username):
