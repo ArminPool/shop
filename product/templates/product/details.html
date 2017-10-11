@@ -166,7 +166,7 @@
                 {% endif %}
 
 
-                {% elif comments.user == user %}
+                {% elif comments.user == user and comments.is_parent and not comments.is_public %}
                 <div class="comments-not-public">
                     {% if comments.user.userprofile.pro_img %}
                     <img
@@ -213,13 +213,6 @@ $(".show-replies").click(function(event){
  $("textarea").before("<label>پیام</label>");
 
 });
-
-
-
-
-
-
-
 
 </script>
 
