@@ -18,8 +18,8 @@
       <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="210" column="34" lean-forward="false" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="34" />
+            <state relative-caret-position="315">
+              <caret line="163" column="17" lean-forward="false" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -409,13 +409,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00180" summary="profile edited">
-      <created>1507616397912</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1507616397912</updated>
-    </task>
     <task id="LOCAL-00181" summary="profile edited">
       <created>1507616489413</created>
       <option name="number" value="00181" />
@@ -752,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507702317433</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="jquery code edited">
+      <created>1507702902948</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1507702902949</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -842,7 +842,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="front end :bace footer right side padding changed" />
     <MESSAGE value="front end :bace footer right side padding changed and background-image fixed" />
     <MESSAGE value="debug false" />
     <MESSAGE value="debug true" />
@@ -867,7 +866,8 @@
     <MESSAGE value="comment system check" />
     <MESSAGE value="comment system check test" />
     <MESSAGE value="jquery code added to details" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery code added to details" />
+    <MESSAGE value="jquery code edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery code edited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1209,8 +1209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="210" column="34" lean-forward="false" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="34" />
+        <state relative-caret-position="315">
+          <caret line="163" column="17" lean-forward="false" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
           <folding />
         </state>
       </provider>

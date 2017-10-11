@@ -98,9 +98,9 @@
                     {% for children in comments.children %}
                     {% with comments=comments.children %}
                     {% endwith %}
-
+<blockquote>
                     <div class="children">
-                        <blockquote>
+
                             {% if children.is_public %}
 
                             {% if children.user.userprofile.pro_img %}
@@ -159,8 +159,9 @@
                                 <p>نظر شما ثبت شده و منتظر تایید است.</p>
                             </div>
                             {% endif %}
-                        </blockquote>
+
                     </div>
+    </blockquote>
                     {% endfor %}
                 </div>
                 {% endif %}
