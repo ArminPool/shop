@@ -8,7 +8,7 @@ textarea {
     max-height: 100%;
 }
 
-.gr_ver_2 div[style]{
+.gr_ver_2[style]{
    top: auto;
 }
 #add-basket-button button{
