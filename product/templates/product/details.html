@@ -166,7 +166,7 @@
                 {% endif %}
 
 
-                {% elif comments.user == user and comments.is_parent and not comments.is_public %}
+                {% elif comments.user == user %}
                 <div class="comments-not-public">
                     {% if comments.user.userprofile.pro_img %}
                     <img
