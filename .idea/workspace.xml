@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
+    <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="jq code added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/base.html" afterPath="$PROJECT_DIR$/product/templates/product/base.html" />
     </list>
@@ -18,8 +18,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
-              <caret line="233" column="13" lean-forward="false" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
+            <state relative-caret-position="175">
+              <caret line="215" column="45" lean-forward="false" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -38,8 +38,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/emoji-picker-master/emoji-picker-master/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="79" selection-end-column="13" />
+            <state relative-caret-position="182">
+              <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -451,13 +451,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00189" summary="front end :bace footer right side padding changed">
-      <created>1507619517064</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1507619517065</updated>
-    </task>
     <task id="LOCAL-00190" summary="front end :bace footer right side padding changed">
       <created>1507619683872</created>
       <option name="number" value="00190" />
@@ -794,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507708771571</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="jq code added">
+      <created>1507709141973</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1507709141973</updated>
+    </task>
+    <option name="localTasksCounter" value="239" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -884,7 +884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="endif added" />
     <MESSAGE value="edit" />
     <MESSAGE value="end for and endif position changed" />
     <MESSAGE value="endfor added" />
@@ -909,7 +908,8 @@
     <MESSAGE value="font awesome added" />
     <MESSAGE value="css js jq file added for emoji" />
     <MESSAGE value="script sources edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="script sources edited" />
+    <MESSAGE value="jq code added" />
+    <option name="LAST_COMMIT_MESSAGE" value="jq code added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1244,16 +1244,16 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/emoji-picker-master/emoji-picker-master/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="79" selection-end-column="13" />
+        <state relative-caret-position="182">
+          <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="233" column="13" lean-forward="false" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="215" column="45" lean-forward="false" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
           <folding />
         </state>
       </provider>
