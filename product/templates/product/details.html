@@ -208,7 +208,7 @@ $(".comments span + button").click(function(event){
 
 $(".show-replies").click(function(event){
     event.preventDefault();
-    $(".see-replies").fadeToggle();
+     $(this).nextAll('.see-replies').first().fadeToggle();
 });
  $("textarea").before("<label>پیام</label>");
 
