@@ -52,7 +52,7 @@
             </div>
         </form>
         {% endif %}
-        <p> {{post.comments.all.count}} کامنت </p>
+        <p> {{post.comments.all.count}} نظر </p>
         {% for comments in post.comments.all %}
         <div class="comments">
             <blockquote>
@@ -213,7 +213,7 @@ $(".show-replies").click(function(event){
      $(this).nextAll('.see-replies').first().fadeToggle();
 });
  $("textarea").before("<label>پیام</label>");
-
+$('textarea').emojiarea()
 
 $('blockquote').filter(function(){return $(this).text().trim().length==0}).remove();
 });
