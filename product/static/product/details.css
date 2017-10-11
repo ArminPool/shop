@@ -3,6 +3,11 @@ position:relative;
 right:70px;
 }
 
+textarea {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 #add-basket-button button{
 
 position : relative;
