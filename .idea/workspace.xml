@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/base.html" afterPath="$PROJECT_DIR$/product/templates/product/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/static/product/base.css" afterPath="$PROJECT_DIR$/product/static/product/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/details.html" afterPath="$PROJECT_DIR$/product/templates/product/details.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="208" column="16" lean-forward="false" selection-start-line="208" selection-start-column="16" selection-end-line="208" selection-end-column="16" />
+            <state relative-caret-position="375">
+              <caret line="209" column="5" lean-forward="true" selection-start-line="207" selection-start-column="1" selection-end-line="209" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -28,18 +29,18 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="260">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+            <state relative-caret-position="335">
+              <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -119,10 +120,10 @@
         <option value="$PROJECT_DIR$/shop/settings.py" />
         <option value="$PROJECT_DIR$/product/models.py" />
         <option value="$USER_HOME$/Desktop/emoji-picker-master/emoji-picker-master/demo/index.html" />
-        <option value="$PROJECT_DIR$/product/templates/product/details.html" />
         <option value="$PROJECT_DIR$/product/static/product/details.css" />
-        <option value="$PROJECT_DIR$/product/static/product/base.css" />
         <option value="$PROJECT_DIR$/product/templates/product/base.html" />
+        <option value="$PROJECT_DIR$/product/static/product/base.css" />
+        <option value="$PROJECT_DIR$/product/templates/product/details.html" />
       </list>
     </option>
   </component>
@@ -438,13 +439,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
-    </task>
-    <task id="LOCAL-00201" summary="edit">
-      <created>1507623154201</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1507623154202</updated>
     </task>
     <task id="LOCAL-00202" summary="end for and endif position changed">
       <created>1507624459197</created>
@@ -782,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507731476297</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="gr_ver_2 top changed with jq">
+      <created>1507731890643</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1507731890644</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -872,7 +873,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="detail css edited" />
     <MESSAGE value="all id changed to class" />
     <MESSAGE value="div and blockquote moved" />
     <MESSAGE value="some condition changed" />
@@ -897,7 +897,8 @@
     <MESSAGE value="script added" />
     <MESSAGE value="grammarly problem find" />
     <MESSAGE value="grammarly problem fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="grammarly problem fixing" />
+    <MESSAGE value="gr_ver_2 top changed with jq" />
+    <option name="LAST_COMMIT_MESSAGE" value="gr_ver_2 top changed with jq" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1207,14 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/static/product/details.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1223,18 +1216,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
+    <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="209" column="5" lean-forward="true" selection-start-line="207" selection-start-column="1" selection-end-line="209" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product/templates/product/base.html">
+    <entry file="file://$PROJECT_DIR$/product/static/product/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="208" column="16" lean-forward="false" selection-start-line="208" selection-start-column="16" selection-end-line="208" selection-end-column="16" />
+        <state relative-caret-position="260">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/templates/product/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
           <folding />
         </state>
       </provider>
