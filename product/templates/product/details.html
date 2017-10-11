@@ -137,7 +137,7 @@
                             {% endif %}
 
 
-                            {% elif not children.is_public and children.user == user and children.is_parent %}
+                            {% elif not children.is_public and children.user == user %}
                             <div class="children-not-public">
                                 {% if children.user.userprofile.pro_img %}
                                 <img
