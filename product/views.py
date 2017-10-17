@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.shortcuts import render, redirect
 
 from django.views.generic import ListView
@@ -143,3 +144,18 @@ def detail(request, pk):
     template_name = 'product/details.html'
     context = {'form': form, 'post': post}
     return render(request, template_name, context)
+
+
+def Search(request):
+    template_name = 'product/search.html'
+    queryset_list = None
+    query = request.GET.get('q')
+
+    if query:
+        queryset_list = Post.objects.all().filter(
+            Q(product_name__icontains=query) |
+            Q(product_prize__icontains=query) |
+            Q(product_category__icontains=query)
+        )
+    context = {'queryset_list': queryset_list}
+    return render(request,template_name,context)

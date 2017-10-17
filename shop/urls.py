@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
 
-from product.views import contact, about_us, advertising, set_timezone
+from product.views import contact, about_us, advertising, set_timezone,Search
 from shop import settings
 
 urlpatterns = [
@@ -12,7 +12,9 @@ urlpatterns = [
 
     url(r'', include('product.urls')),
     url(r'^user/', include('User.urls')),
-    url(r'^search/', include('haystack.urls')),
+   # url(r'^search/', include('haystack.urls')),
+    url(r'^search/', Search,name='search'),
+
     url(r'^contact/$', contact, name='Contact'),
     url(r'^about-us/$', about_us, name='about-us'),
     url(r'^advertising/$', advertising, name='advertising'),
