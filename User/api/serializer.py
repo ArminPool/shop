@@ -122,10 +122,9 @@ class UserDetailSerializer(ModelSerializer):
 
 class UserBasketSerializer(ModelSerializer):
     product_name = SerializerMethodField()
-
     class Meta:
         model = Basket
-        fields = ['current_user', 'product_name']
+        fields = ['product_name']
 
     def get_product_name(self,obj):
         games = []
@@ -134,3 +133,20 @@ class UserBasketSerializer(ModelSerializer):
         return games
 
 
+
+class BasketSerializer(ModelSerializer):
+    product_name = SerializerMethodField()
+    owner = SerializerMethodField()
+
+    class Meta:
+        model = Basket
+        fields = ['owner', 'product_name']
+
+    def get_product_name(self, obj):
+        games = []
+        for field in obj.product_name.all():
+            games.append(field.product_name)
+        return games
+
+    def get_owner(self, obj):
+        return obj.current_user.username

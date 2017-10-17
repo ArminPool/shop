@@ -16,7 +16,8 @@ from rest_framework.permissions import \
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import LimitOffsetPagination, PageNumberPagination
 
-from User.api.serializer import CreateUserSerializer, UserListSerializer, UserDetailSerializer, UserBasketSerializer
+from User.api.serializer import CreateUserSerializer, UserListSerializer, UserDetailSerializer, UserBasketSerializer, \
+    BasketSerializer
 from User.models import UserProfile
 from product.api.pagination import PostLimitOffsetPagination
 from product.api.serializer import PostListSerializer, CommentListSerializer, PostDetailSerializer, \
@@ -24,8 +25,6 @@ from product.api.serializer import PostListSerializer, CommentListSerializer, Po
 from product.models import Basket
 
 User = get_user_model()
-
-
 
 
 class UserListApiView(ListAPIView):
@@ -37,15 +36,17 @@ class UserCreateApiView(CreateAPIView):
     serializer_class = CreateUserSerializer
     queryset = User.objects.all()
 
+
 class UserDetailApiView(RetrieveAPIView):
     queryset = UserProfile.objects.all()
     serializer_class = UserDetailSerializer
-
-
-
 
 
 class UserBasketApiView(ListAPIView):
     queryset = Basket.objects.all()
     serializer_class = UserBasketSerializer
 
+
+class BasketApiView(ListAPIView):
+    queryset = Basket.objects.all()
+    serializer_class = BasketSerializer
