@@ -34,6 +34,9 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="haystack.indexes" />
+          <option value="product.models.Post.objects" />
+          <option value="product.models.Comment.objects" />
+          <option value="User.models.UserProfile.objects" />
         </list>
       </option>
     </inspection_tool>

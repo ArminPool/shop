@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'User.apps.UserConfig',
     'jalali_date',
     'haystack',
+    'rest_framework',
 
 
 ]

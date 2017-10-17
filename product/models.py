@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+
 # Create Posts Models for Product which we want to add in our site
 class Post(models.Model):
     product_name = models.CharField(max_length=250)
@@ -22,9 +23,9 @@ class Post(models.Model):
 
 # Each User have a Basket for buying the Products
 class Basket(models.Model):
-    product_name = models.ManyToManyField(Post)
+    product_name = models.ManyToManyField(Post,)
 
-    current_user = models.ForeignKey(User, related_name='owner')
+    current_user = models.ForeignKey(User, related_name='basket')
 
     @classmethod
     def add_item(cls, current_user, new_item):
@@ -45,6 +46,13 @@ class Basket(models.Model):
         )
 
         basket.product_name.remove(new_item)
+
+
+class CommentManager(models.Manager):
+    def all(self):
+        qs = super(CommentManager, self).filter(parent=None)
+
+        return qs
 
 
 class Comment(models.Model):
@@ -69,7 +77,7 @@ class Comment(models.Model):
             return False
         return True
 
-# is_public for moderation
+    # is_public for moderation
     def is_public(self):
 
         if self.public:
