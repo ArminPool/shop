@@ -16,6 +16,7 @@ from rest_framework.permissions import \
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import LimitOffsetPagination, PageNumberPagination
 
+from User.api.permissions import  UserDetailPermissions, IsOwnerOfBasket
 from User.api.serializer import CreateUserSerializer, UserListSerializer, UserDetailSerializer, UserBasketSerializer, \
     BasketSerializer
 from User.models import UserProfile
@@ -30,6 +31,7 @@ User = get_user_model()
 class UserListApiView(ListAPIView):
     serializer_class = UserListSerializer
     queryset = UserProfile.objects.all()
+    permission_classes = [IsAdminUser]
 
 
 class UserCreateApiView(CreateAPIView):
@@ -37,16 +39,25 @@ class UserCreateApiView(CreateAPIView):
     queryset = User.objects.all()
 
 
-class UserDetailApiView(RetrieveAPIView):
+class UserDetailApiView(RetrieveUpdateAPIView):
     queryset = UserProfile.objects.all()
     serializer_class = UserDetailSerializer
+    permission_classes = [UserDetailPermissions]
 
 
-class UserBasketApiView(ListAPIView):
+class UserBasketApiView(RetrieveAPIView):
     queryset = Basket.objects.all()
     serializer_class = UserBasketSerializer
+    permission_classes = [IsOwnerOfBasket]
+
+
+class BasketUpdateApiView(RetrieveUpdateAPIView):
+    queryset = Basket.objects.all()
+    serializer_class = BasketSerializer
+    permission_classes = [IsOwnerOfBasket]
 
 
 class BasketApiView(ListAPIView):
     queryset = Basket.objects.all()
     serializer_class = BasketSerializer
+    permission_classes = [IsAdminUser]
