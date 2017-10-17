@@ -11,7 +11,7 @@ from .views import (PostListApiView,
 urlpatterns = [
 
     url(r'^$', PostListApiView.as_view(), name='PostListApi'),
-    url(r'^detail/(?P<product_name>[\w+][:/n.]+)/$', PostDetailApiView.as_view(), name='post-detail'),
+    url(r'^detail/(?P<product_name>[\w+][\b*])/$', PostDetailApiView.as_view(), name='post-detail'),
     url(r'^detail/(?P<product_name>\w+)/delete/$', PostDestroyApiView.as_view(), name='post-delete'),
     url(r'^detail/(?P<product_name>\w+)/edit/$', PostUpdateApiView.as_view(), name='post-update'),
 

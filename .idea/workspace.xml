@@ -4,7 +4,6 @@
     <list default="true" id="e47c4385-a0a6-4585-9ff9-04221e546210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/api/urls.py" afterPath="$PROJECT_DIR$/product/api/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product/templates/product/posts.html" afterPath="$PROJECT_DIR$/product/templates/product/posts.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/product/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
-              <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+              <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -488,13 +487,6 @@
       <option name="presentableId" value="Default" />
       <updated>1504158572860</updated>
     </task>
-    <task id="LOCAL-00216" summary="some condition changed">
-      <created>1507634938859</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1507634938859</updated>
-    </task>
     <task id="LOCAL-00217" summary="some condition changed">
       <created>1507635519766</created>
       <option name="number" value="00217" />
@@ -831,7 +823,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508217264854</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="regular expression testing">
+      <created>1508217656001</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1508217656002</updated>
+    </task>
+    <option name="localTasksCounter" value="266" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -921,7 +920,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="emoji added" />
     <MESSAGE value="emoji changed" />
     <MESSAGE value="emojiarea jq deleted" />
     <MESSAGE value="font awesome added" />
@@ -946,7 +944,8 @@
     <MESSAGE value="footer text edited" />
     <MESSAGE value="API added to webapplication" />
     <MESSAGE value="2directory added" />
-    <option name="LAST_COMMIT_MESSAGE" value="2directory added" />
+    <MESSAGE value="regular expression testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="regular expression testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,7 +1313,7 @@
     <entry file="file://$PROJECT_DIR$/product/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding />
         </state>
       </provider>
