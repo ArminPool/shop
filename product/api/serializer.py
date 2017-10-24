@@ -18,7 +18,7 @@ class PostListSerializer(ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ['product_name', 'product_prize', 'url', ]
+        fields = ['product_name', 'product_prize', 'url', 'product_img']
 
 
 class PostDetailSerializer(ModelSerializer):
