@@ -26,7 +26,7 @@ class PostDetailSerializer(ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ['product_name', 'product_prize', 'product_category', 'comments']
+        fields = ['product_name', 'product_prize', 'product_category', 'comments','product_des']
 
     def get_comments(self, obj):
         return CommentDetailSerializer(obj.comments, many=True).data
