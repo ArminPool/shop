@@ -26,7 +26,7 @@ from .permissions import IsOwnerOrReadOnly
 class PostDetailApiView(RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostDetailSerializer
-    permission_classes = [IsAdminUser]
+
     lookup_field = 'product_name'
 
 
@@ -53,11 +53,13 @@ class PostListApiView(ListAPIView):
 class PostUpdateApiView(RetrieveUpdateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
+    permission_classes = [IsAdminUser]
     lookup_field = 'product_name'
 
 
 class PostDestroyApiView(DestroyAPIView):
     queryset = Post.objects.all()
+    permission_classes = [IsAdminUser]
     serializer_class = PostListSerializer
     lookup_field = 'product_name'
 
