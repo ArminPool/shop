@@ -2,7 +2,9 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
-
+from rest_framework_jwt.views import obtain_jwt_token
+from rest_framework_jwt.views import refresh_jwt_token
+from rest_framework_jwt.views import verify_jwt_token
 from product.views import contact, about_us, advertising, set_timezone,Search
 from shop import settings
 
@@ -22,7 +24,9 @@ urlpatterns = [
     url(r'^api/posts/', include('product.api.urls', namespace='api-posts')),
     url(r'^api/users/', include('User.api.urls', namespace='api-users')),
 
-
+    url(r'^auth-jwt/', obtain_jwt_token),
+    url(r'^auth-jwt-refresh/', refresh_jwt_token),
+    url(r'^auth-jwt-verify/', verify_jwt_token),
 ]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
