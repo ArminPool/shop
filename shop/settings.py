@@ -138,6 +138,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
     ),
 }
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'beer',
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
