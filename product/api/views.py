@@ -78,7 +78,7 @@ class CommentDetailApiView(RetrieveAPIView):
 class CommentUpdateApiView(RetrieveUpdateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentListSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsOwnerOrReadOnly,IsAdminUser]
 
 
 class CommentDestroyApiView(DestroyAPIView):
