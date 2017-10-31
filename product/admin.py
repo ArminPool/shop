@@ -4,7 +4,7 @@ from django.contrib.admin import ModelAdmin
 from django.db import models
 from django.db.models import ManyToManyField
 
-from .models import Post, Basket, Comment
+from .models import Post, Basket, Comment, FileUpload
 from User.models import UserProfile, UsersMessage, GuestMessage
 from django.forms import TextInput, Textarea
 
@@ -28,3 +28,5 @@ admin.site.register(UserProfile)
 admin.site.register(Comment)
 admin.site.register(GuestMessage)
 admin.site.register(UsersMessage)
+admin.site.register(FileUpload)
+

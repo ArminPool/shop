@@ -13,7 +13,7 @@ from rest_framework.serializers import (
 )
 
 from User.models import UserProfile
-from product.models import Basket
+from product.models import Basket, FileUpload
 
 User = get_user_model()
 
@@ -150,3 +150,11 @@ class BasketSerializer(ModelSerializer):
 
     def get_owner(self, obj):
         return obj.current_user.username
+
+
+class UserImageSerializer(ModelSerializer):
+
+
+    class Meta:
+        model = FileUpload
+        fields = ['img']

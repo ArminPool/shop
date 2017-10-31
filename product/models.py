@@ -86,3 +86,7 @@ class Comment(models.Model):
 
     def children(self):
         return Comment.objects.filter(parent=self)
+
+class FileUpload(models.Model):
+
+    img = models.FileField(null=True,upload_to='uploaded')

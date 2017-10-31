@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from rest_framework import request
+from rest_framework import request, serializers
 from rest_framework.reverse import reverse
 from rest_framework.serializers import (
     ModelSerializer
@@ -7,7 +7,7 @@ from rest_framework.serializers import (
     SerializerMethodField,
 )
 
-from ..models import Post, Comment
+from ..models import Post, Comment, FileUpload
 
 
 class PostListSerializer(ModelSerializer):
@@ -26,12 +26,10 @@ class PostDetailSerializer(ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ['product_name', 'product_prize', 'product_category', 'comments','product_des']
+        fields = ['product_name', 'product_prize', 'product_category', 'comments', 'product_des']
 
     def get_comments(self, obj):
         return CommentDetailSerializer(obj.comments, many=True).data
-
-
 
 
 class CommentListSerializer(ModelSerializer):
@@ -44,7 +42,7 @@ class CommentListSerializer(ModelSerializer):
 
     class Meta:
         model = Comment
-        fields = ['id','post', 'user', 'body', 'url']
+        fields = ['id', 'post', 'user', 'body', 'url']
 
     def get_user(self, obj):
         return str(obj.user.username)
@@ -60,7 +58,7 @@ class CommentDetailSerializer(ModelSerializer):
 
     class Meta:
         model = Comment
-        fields = ['id','post', 'user', 'body', 'replies',]
+        fields = ['id', 'post', 'user', 'body', 'replies', ]
 
     def get_user(self, obj):
         return str(obj.user.username)
@@ -74,19 +72,27 @@ class CommentDetailSerializer(ModelSerializer):
         return str(obj.post)
 
 
-
-
 class CommentChildrenSerializer(ModelSerializer):
     post = SerializerMethodField()
     user = SerializerMethodField()
 
-
     class Meta:
         model = Comment
-        fields = ['id','post', 'user', 'body', 'user']
+        fields = ['id', 'post', 'user', 'body', 'user']
 
     def get_user(self, obj):
         return str(obj.user.username)
 
     def get_post(self, obj):
         return str(obj.post)
+
+
+class FileUploadSerializer(serializers.HyperlinkedModelSerializer):
+    owner = serializers.SlugRelatedField(
+        read_only=True,
+        slug_field='id'
+    )
+
+    class Meta:
+        model = FileUpload
+        read_only_fields = ('created', 'datafile', 'owner')
