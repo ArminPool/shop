@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.views.generic import TemplateView
 
 import product
 from . import views
@@ -14,6 +15,7 @@ from product import views as PV
 app_name = 'user'
 urlpatterns = [
     url(r'^$', PV.Home.as_view()),
+    url(r'^upload-file/$', TemplateView.as_view(template_name= 'User/upload.html')),
 
     # Allows to render our own login page
     url(r'^login/$', login, {'template_name': 'User/login.html'}, name='login'),
@@ -26,6 +28,7 @@ urlpatterns = [
                                                'post_reset_redirect': 'user:password_reset_done',
                                                'email_template_name': 'User/reset_password_email.html'},
         name='reset_password'),
+    url(r'^rezome/$', TemplateView.as_view(template_name='User/rezome.html'), name='rules'),
 
     url(r'^reset-password-done$', password_reset_done, {'template_name': 'User/reset_password_done.html'},
         name='password_reset_done'),

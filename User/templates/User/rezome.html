@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>رزومه</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <link rel="stylesheet" href="{% static 'product/font-awesome.min..css' %}">
+<link rel="stylesheet" href="{% static 'product/bootstrap.min.css' %}">
+    <style>
+          @font-face {
+        font-family: 'Far.Bardiya';
+        src:        url('http://www.fontfarsi.ir/Content/Fonts/EOT/Far_Bardiya.eot');
+        src: local('☺'),
+                    url('http://www.fontfarsi.ir/Content/Fonts/WOFF/Far_Bardiya.woff') format('woff'),
+                    url('http://www.fontfarsi.ir/Content/Fonts/TTF/Far_Bardiya.ttf') format('truetype'),
+                    url('http://www.fontfarsi.ir/Content/Fonts/SVG/Far_Bardiya.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        }
+             @font-face {
+        font-family: 'Far.DinarTwoMedium';
+        src:        url('http://www.fontfarsi.ir/Content/Fonts/EOT/Far_DinarTwoMedium.eot');
+        src: local('☺'),
+                    url('http://www.fontfarsi.ir/Content/Fonts/WOFF/Far_DinarTwoMedium.woff') format('woff'),
+                    url('http://www.fontfarsi.ir/Content/Fonts/TTF/Far_DinarTwoMedium.ttf') format('truetype'),
+                    url('http://www.fontfarsi.ir/Content/Fonts/SVG/Far_DinarTwoMedium.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body{
+
+        background-color:#f4f4f4;
+        line-height:2.42857143;
+        }
+body p,h4,h3,h2,a{
+
+ font-family: 'Far.DinarTwoMedium',Tahoma, Sans-Serif;
+
+}
+a:hover,a:focus{
+  text-decoration:none;
+
+}
+.container .jumbotron{
+
+background-color:#fff;
+border-radius:0px;
+}
+.container .jumbotron p,a {
+ font-size:16px;
+}
+.navbar{
+background-color:#0066CC;
+min-height:10px;
+margin-bottom:40px;
+}
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <div class="navbar">
+
+        </div>
+        <p>نام :آرمین </p>
+        <p>نام خانوادگی : یحیی</p>
+        <p>سن :۱۹</p>
+        <p>ایمیل :armin_yahya@yahoo.com</p>
+        <p>محل سکونت :تهران</p>
+        <p>مباحثی که میتونم باهاشون کار کنم رو در زیر بخش بخش کردم و در مورد هر یک توضیح دادم که چکاری باهاشون انجام
+            میدم. </p>
+        <a href="#" id="Backend-btn">Backend</a>
+        <br>
+        <a href="#" id="Frontend-btn">Frontend</a>
+
+        <h3 id="backend" style="padding-bottom:20px;">Backend</h3>
+
+        <h4> با <b>django </b>کارمیکنم </h4>
+        <p>- میتونم model های مختلف بسته به نیازتون بسازم مثل model پروفایل کاربرها (userprofile)که اکثر سایت ها یا
+            appها بهش احتیاج دارن و ازش استفاده میکنن.</p>
+        <p>کاربراتون میتون ویژگی های مختلفی داشته باشند.</p>
+        <p>میتونم سایتتون رو روی هاست هایی که خدمات پایتونی میدن deploy کنم.</p>
+        <p>میتونم با cpanel کار کنم.</p>
+        <p>- با mysql آشنایی دارم (البته خود جنگو دستورات لازم رو به دیتابیس میفرسته ولی اگه اشتباهی حین migration ها یا
+            migrate رخ بده میتونم مستقیما از mysql درستش کنم )و از اون بعنوان دیتابیس بک اند استفاده میکنم.</p>
+        <p>- میتونم برای ساییتون ایمیل و درگاه پرداخت قرار بدم و جفتشون به جنگو وصل خواهند بود.</p>
+        <p>- از git استفاده میکنم.</p>
+        <h4> تجربه کار با <b>django rest framework </b> رو دارم</h4>
+        <p>با django rest framework داده های سایتتون رو به فرمت json تبدیل میکنم و برنامه نویس اندروید یا سمت clientتون
+            میتونه اونا رو در گوشی یا صفحه خاصی نمایش بده و یا کار خاصی روشون انجام بده.</p>
+        <p>- میتونم دسترسی به api رو محدود کنم به خواسته ی شما </p>
+
+
+        <h3 id="frontend" style="padding-bottom:20px;">Frontend</h3>
+
+        <p>- با <b> sass,css,html </b>کار میکنم.</p>
+        <p>-از <b> bootstrap3 </b> برای طراحی responsive استفاده میکنم.</p>
+        <p>-از <b> jquery </b>استفاده میکنم.</p>
+        <p>-از <b> ajax یا axios </b>برای فرستادن request ها استفاده میکنم.</p>
+
+        <h3>نمونه کارها</h3>
+        <p style="text-align:right;">برای نمونه کار سایت <a href="https://navasangold.com"> navasangold.com </a>رو معرفی
+            میکنم که هم backend و هم frontend این سایت توسط خودم نوشته شده .</p>
+        <p dir="ltr" style="text-align:right;">رو مشاهده کنید<a href="http://arminyahya.pythonanywhere.com/api/posts/">
+            arminyahya.pythonanywhere.com/api/posts/ </a>،rest api برای نمونه کار </p>
+        <h3>درباره خودم</h3>
+        <p>
+            درباره خودم باید بگم که من کارم رو دوست دارم و کد نویسی و چالش هاش برام جالبه و همیشه سعی میکنم تا علم خودمو
+            بروز نگهدارم
+            و در رابطه با کار تیمی دوست دارم که بقیه افراد تیم هم به اندازه من کارشون رو جدی بگیرن مخصوصا وقتی که کار در
+            مرحله ی آغازی باشه.
+            جدا از کدنویسی به موسیقی و سریال هم علاقه دارم .
+        </p>
+    </div>
+</div>
+ <script src="{% static 'product/jquery.min.js' %}"></script>
+<script src="{% static 'product/bootstrap.min.js' %}"></script>
+<script>
+$(document).ready(function(){
+
+$("#Backend-btn").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#backend").offset().top
+                }, 2000);
+ });
+       $("#Frontend-btn").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#frontend").offset().top
+                }, 2000);
+
+ });
+            });
+
+</script>
+</body>
+</html>

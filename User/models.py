@@ -9,7 +9,7 @@ from django.db import models
 class UserProfile(models.Model):
     # Each user-field in UserProfile can only have one user
     user = models.ForeignKey(User, related_name="userprofile", null=True)
-    phone_number = models.CharField(max_length=11, blank=False)
+    phone_number = models.CharField(max_length=11, blank=True)
 
     city = models.CharField(max_length=100, null=True, blank=True)
     website = models.URLField(null=True, blank=True)

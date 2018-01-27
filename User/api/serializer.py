@@ -109,29 +109,30 @@ class UserDetailSerializer(ModelSerializer):
 
     class Meta:
         model = UserProfile
-        fields = ['id', 'username', 'email', 'phone_number', 'city', 'website', 'pro_img','basket']
+        fields = ['id', 'username', 'email', 'phone_number', 'city', 'website', 'pro_img', 'basket']
 
     def get_username(self, obj):
         return obj.user.username
 
     def get_email(self, obj):
         return obj.user.email
+
     def get_basket(self, obj):
-        return UserBasketSerializer(obj.user.basket,many=True).data
+        return UserBasketSerializer(obj.user.basket, many=True).data
 
 
 class UserBasketSerializer(ModelSerializer):
     product_name = SerializerMethodField()
+
     class Meta:
         model = Basket
         fields = ['product_name']
 
-    def get_product_name(self,obj):
+    def get_product_name(self, obj):
         games = []
         for field in obj.product_name.all():
             games.append(field.product_name)
         return games
-
 
 
 class BasketSerializer(ModelSerializer):
@@ -153,8 +154,6 @@ class BasketSerializer(ModelSerializer):
 
 
 class UserImageSerializer(ModelSerializer):
-
-
     class Meta:
         model = FileUpload
         fields = ['img']

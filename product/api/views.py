@@ -32,14 +32,14 @@ class PostDetailApiView(RetrieveAPIView):
 
 class PostListApiView(ListAPIView):
     serializer_class = PostListSerializer
-    filter_backends = [SearchFilter, OrderingFilter]
+    filter_backends = [SearchFilter, OrderingFilter]#?search=...&ordering=
     pagination_class = PostLimitOffsetPagination
     search_fields = ['product_name','product_prize']
     ordering = ('-product_prize',)
 
     def get_queryset(self, *args, **kwargs):
         queryset_list = Post.objects.all()
-        query = self.request.GET.get("q")
+        query = self.request.GET.get("q")#?q=...
         if query:
             queryset_list = queryset_list.filter(
                 Q(product_name__icontains=query) |
